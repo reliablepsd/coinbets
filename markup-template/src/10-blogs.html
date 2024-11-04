@@ -1,0 +1,176 @@
+---
+title: Blogs page
+---
+{% import 'src/template/macrosAndVariable.html' as global %}
+{% include 'src/template/head.html' %}
+
+<body>
+	<div class="wrapper offset-header">
+		{% include 'src/template/header.html' %}
+
+		<main class="main">
+			<section class="pt-10 text-white txt-c bg-blue bg-white-b-part bg-md-gray-b-part">
+				<div class="container">
+					<h3 class="h5">OUR LATEST ARTICLES</h3>
+					<h1>Trending Topics</h1>
+					<h2 class="h4">Discover the Best Crypto Casinos and Crypto Sports Betting online!</h2>
+				</div>
+				<div class="swiper blogs-slider mt-4">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="g-expert">
+								<div class="g-expert-img">
+									<img src="img/img14.jpg" alt="img">
+								</div>
+								<div class="g-expert-txt">
+								<ul class="g-expert-tags">
+									<li class="g-e-t-bg-green">Guides 101</li>
+								</ul>
+								<h3 class="h6-700"><a href="#">Crypto vs. Traditional Gambling: What’s the Difference?</a></h3>
+								<p>A Brief Overview of Online Gambling: Online gambling has transformed significantly since its inception in the mid-1990s.</p>
+								<div class="g-expert-meta">
+									<div class="g-expert-date">July 18, 2024</div>
+									<div class="g-expert-views">200 Views</div>
+									<div class="g-expert-read">2 mins read</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="g-expert">
+								<div class="g-expert-img">
+									<img src="img/img15.jpg" alt="img">
+								</div>
+								<div class="g-expert-txt">
+								<ul class="g-expert-tags">
+									<li>Guides</li>
+								</ul>
+								<h3 class="h6-700"><a href="#">Crypto vs. Traditional Gambling: What’s the Difference?</a></h3>
+								<p>A Brief Overview of Online Gambling: Online gambling has transformed significantly since its inception in the mid-1990s.</p>
+								<div class="g-expert-meta">
+									<div class="g-expert-date">July 18, 2024</div>
+									<div class="g-expert-views">200 Views</div>
+									<div class="g-expert-read">2 mins read</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="g-expert">
+								<div class="g-expert-img">
+									<img src="img/img5.jpg" alt="img">
+								</div>
+								<div class="g-expert-txt">
+								<ul class="g-expert-tags">
+									<li class="g-e-t-bg-l-blue">Trending</li>
+								</ul>
+								<h3 class="h6-700"><a href="#">Crypto vs. Traditional Gambling: What’s the Difference?</a></h3>
+								<p>A Brief Overview of Online Gambling: Online gambling has transformed significantly since its inception in the mid-1990s.</p>
+								<div class="g-expert-meta">
+									<div class="g-expert-date">July 18, 2024</div>
+									<div class="g-expert-views">200 Views</div>
+									<div class="g-expert-read">2 mins read</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pt-5 pb-10 bg-white bg-md-gray">
+				<div class="container">
+					<div class="mob-fix-position">
+					<div class="container txt-c _w590">
+						<h2 class="h4">Join the Coinbets newsletter</h2>
+						<p>Stay ahead in the crypto gambling world with exclusive access to our latest  guides, reviews, and expert articles.</p>
+					</div>
+					<div class="footer-subscribe _bg-input-gray my-4">
+						<h2 class="h6">Subscribe to our newsletter</h2>
+						<form class="form-subscribe">
+							<div class="form-subscribe-row">
+								<input type="email" placeholder="Enter email address" required>
+								<!-- <input type="submit" value="Subscribe >"> -->
+								<button>Subscribe</button>
+							</div>
+						</form>
+					</div>
+					<div class="mt-9 mt-md-0 mb-md-5 order-first">
+					<div class="hero-links _mob-v2">
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<img src="img/sico33.svg" alt="ico">
+							</div>
+							<h3 class="h6-500">Beginner Guides</h3>
+							<div class="hero-link-num">208</div>
+						</a>
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<img src="img/sico34.svg" alt="img">
+							</div>
+							<h3 class="h6-500">Casino Game guides</h3>
+							<div class="hero-link-num">208</div>
+						</a>
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<img src="img/sico35.svg" alt="img">
+							</div>
+							<h3 class="h6-500">Helpful Guides</h3>
+							<div class="hero-link-num">208</div>
+						</a>
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<i class="i-sico5"></i>
+							</div>
+							<h3 class="h6-500">Expert Reviews</h3>
+							<div class="hero-link-num">208</div>
+						</a>
+					</div>
+					</div>
+				</div>
+				</div>
+				<div class="container _w1170">
+					<div class="g-experts-s">
+						<div class="g-experts mob-not-slider">
+						{{ global.expertItem([{
+							t: "How to start playing at a real money online casino",
+							img: "img/img1.jpg"
+						},{
+							t: "Real money games available at top online casinos",
+							img: "img/img2.jpg"
+						},{
+							t: "Online casino withdrawals",
+							img: "img/img3.jpg"
+						},{
+							t: "Which real money online casinos you should avoid",
+							img: "img/img4.jpg"
+						},{
+							t: "Find the best online casino using our helper tool",
+							img: "img/img5.jpg"
+						},{
+							t: "Advanced online casino list filters",
+							img: "img/img6.jpg"
+						},{
+							t: "Recent updates to our casino ",
+							img: "img/img7.jpg"
+						},{
+							t: "About our casino review team",
+							img: "img/img8.jpg"
+						},{
+							t: "How we review online casinos",
+							img: "img/img9.jpg"
+						}
+						], true)}}
+						</div>
+					</div>
+					<div class="txt-c mt-2_5">
+						<a href="#" class="button _btn-gray _btn-w-a">Load more</a>
+					</div>
+					</div>
+			</section>
+		</main>
+
+		{% include 'src/template/footer.html' %}
+	</div>
+	{% include 'src/template/includes.html' %}
+</body>
+</html>

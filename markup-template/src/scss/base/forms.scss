@@ -1,0 +1,477 @@
+// Form and form elements
+
+form,
+fieldset {
+	border: none;
+	display: block;
+	padding: 0;
+	margin: 0 0 var(--vertical-rhythm);
+}
+
+label {
+	display: block;
+	font-weight: 500;
+	font-size: var(--label-fz);
+	line-height: var(--label-lh);
+	color: var(--label-color);
+	margin: 0 0 var(--vertical-rhythm);
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+	min-height: 56px;
+	-webkit-appearance: none;
+	outline: none;
+	max-width: 100%;
+	width: 100%;
+	padding: var(--input-y) var(--input-x);
+	margin: 0;
+	border: var(--input-border) solid var(--input-border-color);
+	border-radius: var(--input-radius);
+	background: var(--input-bg-color);
+	font-size: var(--input-fz);
+	line-height: var(--input-lh);
+	font-weight: 500;
+	color: var(--input-color);
+	text-align: left;
+
+	@include placeholder {
+		color: var(--input-placeholder-color);
+		opacity: 1;
+		transition: opacity 0.15s linear;
+	}
+
+	&:focus {
+		border-color: var(--input-focus-border-color);
+
+		@include placeholder {
+			opacity: 0;
+		}
+	}
+
+	.error & {
+		color: var(--color-red);
+	}
+}
+
+textarea {
+	resize: none;
+	vertical-align: top;
+	width: 100%;
+	height: 200px;
+}
+
+/* button, */
+input[type='button'],
+input[type='reset'],
+// input[type='file'],
+input[type='submit'],
+button[type='submit'] {
+	-webkit-appearance: none;
+	@extend .button;
+
+	&.button-secondary {
+		@extend .button-secondary;
+	}
+}
+
+input[type="reset"] {
+	margin-bottom: 13px;
+}
+
+input[type="file"] {
+	max-width: 100%;
+}
+
+//------------------- style #input #textarea
+// removes the icon in the search type field
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
+/* custom checkbox styles */
+
+.jcf-checkbox {
+	color: #A2AEB7;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+	background-color: transparent;
+	border: 1px solid currentColor;
+	margin: 0 4px 0 0;
+	border-radius: 3px;
+	height: var(--checkbox-size);
+	width: var(--checkbox-size);
+	flex: 0 0 var(--checkbox-size);
+}
+
+.jcf-checkbox span {
+	position: absolute;
+	display: none;
+	height: 6px;
+	width: 10px;
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -5px;
+	border: 3px solid currentColor;
+	border-width: 0 0 2px 2px;
+	transform: rotate(-45deg);
+}
+
+.jcf-checkbox input[type="checkbox"] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+.jcf-checkbox.jcf-checked {
+	border-color: currentColor;
+	background-color: transparent;
+
+	span {
+		display: block;
+	}
+}
+
+/* custom radio styles */
+
+.jcf-radio {
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+	background: #fff;
+	border: 1px solid var(--input-border-color);
+	border-radius: 50%;
+	margin: 0 0.5em 0 0;
+	height: var(--radio-size);
+	width: var(--radio-size);
+	flex: 0 0 var(--radio-size);
+}
+
+.jcf-radio span {
+	display: none;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	background: var(--form-theme-color);
+	border-radius: 100%;
+}
+
+.jcf-radio input[type="radio"] {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border: 0;
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+.jcf-radio.jcf-checked span {
+	display: block;
+}
+
+/* custom select styles */
+
+.jcf-select {
+	@extend .ff-arial;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	background-color: var(--color-white);
+	min-width: 0;
+	width: 100%;
+	padding: var(--input-y) 25px var(--input-y) var(--input-x);
+	color: var(--color-dark-100);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0.154px;
+	border-radius: 4px;
+	border: 1px solid #D1D5DB;
+	box-shadow: 0px 1px 1px 0px rgba(17, 24, 39, 0.10) inset;
+
+	.jcf-ul {
+		padding: 10px 0;
+	}
+
+	&.jcf-drop-active {
+		.jcf-select-opener {
+			&:before {
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
+
+	select {
+		z-index: 1;
+		left: 0;
+		top: 0;
+	}
+
+	.jcf-select-text {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		cursor: default;
+		display: flex;
+		align-items: center;
+		grid-gap: 5px;
+		min-height: 1.2em;
+		padding-right: 2px;
+	}
+
+	.jcf-select-opener {
+		position: absolute;
+		text-align: center;
+		width: 20px;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		color: currentColor;
+		@extend %bg-i-r;
+		@extend .i-arrow-down;
+		--bg-r: 12px;
+		--bg-w: 6px;
+		--bg-indent: 0px;
+		&:before {
+			transition: transform 0.3s ease;
+		}
+	}
+}
+
+.select-sm {
+	.jcf-select,
+	&.jcf-select {
+		padding: 8px 30px 8px 12px;
+		font-weight: 500;
+		border-color: transparent;
+		box-shadow: none;
+	}
+}
+
+.select-v2 {
+	.jcf-select,
+	&.jcf-select {
+		@extend .ff-second;
+		font-weight: 600;
+		color: #1C1C1C;
+		min-width: 110px;
+		padding: 10px 30px 10px 12px;
+		border-radius: 8px;
+		box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 4px 8px 0px rgba(0, 0, 0, 0.06);
+		.jcf-select-opener {
+			@extend .i-arrow-doble;
+			--bg-w: 10px;
+		}
+	}
+}
+
+
+body>.jcf-select-drop {
+	position: absolute;
+	margin: -1px 0 0;
+	z-index: 9999;
+}
+
+body>.jcf-select-drop.jcf-drop-flipped {
+	margin: 1px 0 0;
+}
+
+.jcf-select .jcf-select-drop {
+	position: absolute;
+	margin-top: 0px;
+	z-index: 9999;
+	top: calc(100% + 4px);
+	left: -1px;
+	right: -1px;
+}
+
+.jcf-select .jcf-drop-flipped {
+	bottom: 100%;
+	top: auto;
+}
+
+.jcf-select-drop .jcf-select-drop-content {
+	border: 0px solid var(--input-border-color);
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* multiple select styles */
+
+.jcf-list-box {
+	overflow: hidden;
+	display: inline-block;
+	border: 1px solid #b8c3c9;
+	min-width: 200px;
+	margin: 0 15px;
+}
+
+/* select options styles */
+
+.jcf-list {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	width: 100%;
+	border-radius: 4px;
+	background: #FFF;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+
+	.jcf-list-content {
+		vertical-align: top;
+		display: inline-block;
+		overflow: auto;
+		width: 100%;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			overflow: hidden;
+			display: block;
+		}
+	}
+
+	.jcf-overflow {
+		overflow: auto;
+	}
+
+	.jcf-option {
+		overflow: hidden;
+		cursor: default;
+		display: block;
+		padding: 5px var(--input-x);
+		color: inherit;
+		height: 1%;
+	}
+
+	.jcf-disabled {
+		background: #fff !important;
+		color: #aaa !important;
+	}
+
+	.jcf-optgroup-caption {
+		white-space: nowrap;
+		font-weight: bold;
+		display: block;
+		padding: 5px 9px;
+		cursor: default;
+		color: #000;
+	}
+
+	.jcf-optgroup .jcf-option {
+		padding-left: 30px;
+	}
+}
+
+.jcf-select-drop .jcf-hover,
+.jcf-list-box .jcf-selected {
+	background: #e6e6e6;
+}
+// #file
+.jcf-file {
+	display: block;
+	white-space: nowrap;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	cursor: pointer;
+
+	.jcf-real-element {
+		position: absolute;
+		height: 20rem;
+		margin: 0;
+		right: 0;
+		top: 0;
+	}
+
+	.jcf-fake-input {
+		@extend %xy-cc;
+		grid-gap: 1rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		text-align: center;
+		border: 2px dashed #003EB6;
+		border-radius: 12px;
+		padding: 3rem;
+		font-size: 1.4rem;
+		min-height: 7.4rem;
+		width: 100%;
+		cursor: pointer;
+		position: relative;
+		color: var(--color-dark-100-06);
+
+		&:before {
+			content: "";
+			display: inline-block;
+			@include size(2rem, 1.8rem);
+			margin-bottom: 3px;
+			background-image: url("data:image/svg+xml,%3Csvg width='21' height='18' viewBox='0 0 21 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 13.5V6.75M10.5 6.75L13.5 9.75M10.5 6.75L7.5 9.75M5.25 16.5C2.76472 16.5 0.75 14.4853 0.75 12C0.75 10.0071 2.04555 8.3167 3.8404 7.7252C3.78105 7.4092 3.75 7.0832 3.75 6.75C3.75 3.85051 6.10051 1.5 9 1.5C11.4312 1.5 13.4765 3.1526 14.0737 5.39575C14.3654 5.30113 14.6767 5.25 15 5.25C16.6569 5.25 18 6.59315 18 8.25C18 8.5981 17.9407 8.9324 17.8316 9.2433C19.2453 9.7805 20.25 11.1479 20.25 12.75C20.25 14.8211 18.5711 16.5 16.5 16.5H5.25Z' stroke='%231F2937' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.jcf-upload-button {
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: top;
+		white-space: nowrap;
+		overflow: hidden;
+		border: 1px solid #777;
+		margin: 0 0 0 -1px;
+		padding: 0 10px;
+		line-height: 28px;
+		height: 28px;
+		display: none;
+	}
+}
+
+//----- my custom jcf -----
+.jcf-select-choose-country {
+		.jcf-option {
+			display: flex;
+			grid-gap: 10px;
+			align-items: center;
+		}
+
+		.jcf-selected {
+			@extend %bg-ico-r;
+			--bg-ico: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 6C12 7.5913 11.3679 9.11742 10.2426 10.2426C9.11742 11.3679 7.5913 12 6 12C4.4087 12 2.88258 11.3679 1.75736 10.2426C0.632141 9.11742 0 7.5913 0 6C0 4.4087 0.632141 2.88258 1.75736 1.75736C2.88258 0.632141 4.4087 0 6 0C7.5913 0 9.11742 0.632141 10.2426 1.75736C11.3679 2.88258 12 4.4087 12 6ZM9.0225 3.7275C8.96893 3.67411 8.90514 3.63208 8.83495 3.60391C8.76476 3.57574 8.68961 3.56202 8.61399 3.56356C8.53838 3.5651 8.46385 3.58187 8.39486 3.61288C8.32588 3.64388 8.26385 3.68848 8.2125 3.744L5.60775 7.06275L4.038 5.49225C3.93137 5.39289 3.79033 5.3388 3.64461 5.34137C3.49888 5.34394 3.35984 5.40297 3.25678 5.50603C3.15372 5.60909 3.09469 5.74813 3.09212 5.89386C3.08955 6.03958 3.14364 6.18062 3.243 6.28725L5.2275 8.2725C5.28096 8.32586 5.34462 8.36791 5.41469 8.39614C5.48475 8.42437 5.55979 8.43819 5.63531 8.43679C5.71083 8.43539 5.7853 8.4188 5.85427 8.38799C5.92324 8.35719 5.9853 8.31281 6.03675 8.2575L9.03075 4.515C9.13282 4.40887 9.18921 4.26696 9.18781 4.11972C9.1864 3.97248 9.12732 3.83166 9.02325 3.7275H9.0225Z' fill='black'/%3E%3C/svg%3E%0A");
+			--bg-r: 12px;
+			--bg-w: 12px;
+		}
+
+		.jcf-select-drop .jcf-hover,
+		.jcf-list-box .jcf-selected {
+			background: transparent;
+		}
+}

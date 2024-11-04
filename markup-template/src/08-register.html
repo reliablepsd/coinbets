@@ -1,0 +1,72 @@
+---
+title: Register page
+---
+{% import 'src/template/macrosAndVariable.html' as global %}
+{% include 'src/template/head.html' %}
+
+<body>
+	<div class="wrapper offset-header">
+		{% include 'src/template/header.html' %}
+
+		<main class="main">
+			<section class="py-12 py-md-6 bg-dark text-white">
+				<div class="container _w950">
+					<div class="d-grid g-login">
+						<div class="g-login-txt">
+							<h2 class="h3 txt-c d-none d-md-block">What is your review about?</h2>
+							<div class="d-md-none mb-3">
+								<p><img src="img/ico7.png" alt="ico"></p>
+								<h1>Get involved in the conversation on the CoinBets forum!</h1>
+								<p>What’s the benefit of joining?</p>
+							</div>
+							<ul class="list-ico _white">
+								<li>Gain valuable tips and strategies from seasoned gamblers and crypto enthusiasts to enhance your betting.</li>
+								<li>Share and read real user experiences on crypto casinos, helping you make informed decisions.</li>
+								<li>Be the first to know about the latest trends, updates, and opportunities in the ever-evolving world of crypto gambling.</li>
+								<li>Gain valuable tips and strategies from seasoned gamblers and crypto enthusiasts to enhance your betting.</li>
+							</ul>
+						</div>
+						<div class="g-login-form">
+							<h2 class="h3 txt-c d-none d-md-block">Join the discussion on the CoinBets forum!</h2>
+							<div class="page-login p-sm">
+								<div class="page-login-title">Submit your review</div>
+								<a href="#" class="button _btn-black"><img src="img/sico24.svg" alt="">Continue with Apple</a>
+								<a href="#" class="button _btn-gray"><img src="img/sico25.svg" alt="">Continue with Google</a>
+								<p>or Continue with your email</p>
+								<div class="login-form">
+									<form>
+										<input type="text" placeholder="Username">
+										<input type="email" placeholder="E-mail address">
+										<input type="password" placeholder="Password (8+ characters)">
+										<input type="password" placeholder="Confirm password">
+										<label class="select-extra">
+											<span>COUNTRY</span>
+											<select>
+												<option>United States - California</option>
+												<option>United States - California2</option>
+												<option>United States - California3</option>
+											</select>
+										</label>
+										<label>
+											<input type="checkbox">
+											Subscribe to e-mails about new bonuses, competitions, and updates
+										</label>
+										<label>
+											<input type="checkbox">
+											I am at least 18 years old and agree to CoinBets
+										</label>
+										<input type="submit" value="Sign up">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		{% include 'src/template/footer.html' %}
+	</div>
+	{% include 'src/template/includes.html' %}
+</body>
+</html>

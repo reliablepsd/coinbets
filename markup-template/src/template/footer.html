@@ -1,0 +1,82 @@
+
+{% import './macrosAndVariable.html' as global %}
+<footer class="footer text-white">
+	<div class="container _w1170 g-md-25">
+		<div class="footer-top">
+			<a href="/"><img src="img/logo-white.svg" alt="logo"></a>
+			<div class="footer-social">
+				<h3 class="h6-500">Follow us</h3>
+				<ul class="social-list">
+					<li><a href="#" target="_blank"><i class="i-facebook"></i></a></li>
+					<li><a href="#" target="_blank"><i class="i-x"></i></a></li>
+					<li><a href="#" target="_blank"><i class="i-instagram"></i></a></li>
+					<li><a href="#" target="_blank"><i class="i-youtube"></i></a></li>
+					<li><a href="#" target="_blank"><i class="i-tiktok"></i></a></li>
+					<li><a href="#" target="_blank"><i class="i-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-subscribe">
+			<h2 class="h6">Subscribe to our newsletter</h2>
+			<form class="form-subscribe">
+				<div class="form-subscribe-row">
+					<input type="email" placeholder="Enter email address" required>
+					<!-- <input type="submit" value="Subscribe >"> -->
+					<button>Subscribe</button>
+				</div>
+				<div class="form-subscribe-check">
+					<label>
+						<input type="checkbox" required>
+						I am at least 18 years old and legally allowed to play in a casino
+					</label>
+				</div>
+			</form>
+		</div>
+		<div class="footer-menus">
+			<div>
+				<h3 class="h6">Helpful Guides</h3>
+				<ul class="footer-menu _ico-inner">
+					<li><a href="#!">Introduction to Crypto Gambling</a></li>
+					<li><a href="#!">The Best Crypto Casinos of 2024</a></li>
+					<li><a href="#!">How to Choose a Safe and Reliable Crypto Casino</a></li>
+					<li><a href="#!">Understanding Blockchain Technology in Online Gambling</a></li>
+					<li><a href="#!">Top Cryptocurrencies for Gambling: Beyond Bitcoin</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="h6">Company</h3>
+				<ul class="footer-menu">
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Transparency Report</a></li>
+					<li><a href="#">Terms of Use</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3 class="h6">CoinBets</h3>
+				<ul class="footer-menu">
+					<li><a href="#"><i class="i-sico1"></i> Crypto Casinos</a></li>
+					<li><a href="#"><i class="i-sico2"></i> Crypto Sports Betting</a></li>
+					<li><a href="#"><i class="i-sico3"></i> Crypto Esports Betting</a></li>
+					<li><a href="#"><i class="i-sico12"></i> Bonuses</a></li>
+					<li><a href="#"><i class="i-sico5"></i> Expert Reviews</a></li>
+					<li><a href="#"><i class="i-sico4"></i> User Reviews</a></li>
+					<li><a href="#"><i class="i-sico6"></i> Forum</a></li>
+					<li><a href="#"><i class="i-sico22"></i>All Guides</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-bottom-grid p-xs">
+				<div class="footer-bottom-grid-txt">
+					<p>CoinBets is an independent source of information about online casinos and online casino games, not controlled by any gambling operator. All our reviews and guides are created honestly, according to the best knowledge and judgment of the members of our independent expert team; however, they are intended for informative purposes only and should not be construed as, nor relied upon as, legal advice. You should always make sure that you meet all regulatory requirements before playing in any selected casino. Copyright ©2024</p>
+				</div>
+				<div class="footer-bottom-grid-lang">
+					<p>CoinBets in other languages</p>
+					<div class="lang-w _top">
+						{% include 'src/template/lang.html' %}
+					</div>
+			</div>
+		</div>
+	</div>
+</footer>

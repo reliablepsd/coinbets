@@ -1,0 +1,981 @@
+---
+title: Individual Review / Database Page
+---
+{% import 'src/template/macrosAndVariable.html' as global %}
+{% include 'src/template/head.html' %}
+
+<body>
+	<div class="wrapper offset-header">
+		{% include 'src/template/header.html' %}
+
+		<main class="main">
+			<section class="pt-3 pb-8 bg-blue-t-part text-white" data-tabs="contact-form-section-1">
+				<div class="container _w1170">
+					<div class="breadcrumb mb-1 d-md-none">
+						<div class="breadcrumb-trail"> <a href="https://basethemedevel.wpengine.com/" title="Base Theme" rel="home" class="trail-begin">Home</a> <span class="sep">/</span> Top Crypto Casino Reviews</div>
+					</div>
+					<div class="r-grid">
+						<div class="r-main">
+							<div class="r-main-top">
+								<div class="r-main-top-l">
+									<div class="r-main-l-img">
+										<img src="img/logo1.png" alt="logo">
+									</div>
+									<div class="r-main-l-info">
+										<div class="h4">Lucky Block</div>
+										<div class="g-review-num"><b>4.9</b>/ 5</div>
+										<div class="g-review-stars">
+											{{ global.starsMacro(4.9)}}
+											<strong>133 Reviews</strong>
+										</div>
+									</div>
+								</div>
+								<div class="r-main-top-r">
+									<div class="r-main-top-r-t">
+										<div>Views <strong>20K+</strong></div>
+										<div class="g-review-index _bg-yellow">Safety Index: <span>Normal</span></div>
+									</div>
+									<div class="r-main-vs">
+										<div class="r-main-vs-pos">
+											<div class="h6-700">Positive</div>
+											<div class="r-main-vs-line" style="--vs-percent: 75%"></div>
+											<div class="r-main-vs-users">191 users</div>
+										</div>
+										<div class="r-main-vs-neg">
+											<div class="h6-700">Negative</div>
+											<div class="r-main-vs-line" style="--vs-percent: 25%"></div>
+											<div class="r-main-vs-users">13 users</div>
+										</div>
+									</div>
+									<div class="r-main-top-r-b">
+										<a href="#" class="button _btn-green _arrow">Visit Official Website</a>
+									</div>
+									<div class="r-main-top-r-mob">
+										<button class="r-main-top-r-mob-btn">Show Company Details</button>
+										<div class="r-main-top-r-mob-h">
+											<div class="h6-500">Contact info for Bed Threads</div>
+											<dl>
+												<dt>Address</dt>
+												<dd><a href="#!">2 Greenhills Ave, Moorebank NSW 2170</a></dd>
+												<dt>Email</dt>
+												<dd><a href="mailto:hello@oshi.com">hello@oshi.com</a></dd>
+												<dt>Established </dt>
+												<dd>2018</dd>
+												<dt>Phone </dt>
+												<dd><a href="tel:1300 371 571">1300 371 571</a></dd>
+												<dt>Est Annual Rev</dt>
+												<dd>5,000,000 USD</dd>
+												<dt>Owner</dt>
+												<dd><a href="#!">Dama N.V.</a></dd>
+											</dl>
+											<div class="filter-r-limit-g _v2">
+												<div>
+													<h6 class="h6">Withdrawal limits</h6>
+													<p>$200,000 Monthly</p>
+												</div>
+												<div>
+													<h6 class="h6">Bonus</h6>
+													<p>150% up to $3,000</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="r-main-links">
+								<a href="#" data-tab-btn="contact-form-section-0" class="r-main-link _active-tab">Overview</a>
+								<a href="#" data-tab-btn="contact-form-section-1" class="r-main-link">Bonuses(1)</a>
+								<a href="#" data-tab-btn="contact-form-section-2" class="r-main-link">User Reviews(133)</a>
+								<a href="#" data-tab-btn="contact-form-section-3" class="r-main-link">Safety Index</a>
+								<a href="#" data-tab-btn="contact-form-section-4" class="r-main-link">Discussion</a>
+							</div>
+							<div class="r-main-content">
+							<div class="r-main-i" data-tab="contact-form-section-0">
+							<div class="r-w">
+								<div class="r-t-w">
+									<h3 class="h4">Oshi Casino Review</h3>
+									<div class="g-review-rating"><b>4.9</b>CoinBets Rating</div>
+								</div>
+								<p>We've thoroughly reviewed Oshi Casino and gave it a High Safety Index, which means it's a great casino to play at. In our review, we've considered the casino's player complaints, estimated revenues, license, games genuineness, customer support quality, fairness of terms and conditions, withdrawal and</p>
+								<div class="review-b _v2">
+									<div class="review-list-w _r-pos">
+										<div class="review-list-t">Positive</div>
+										<ul class="review-list">
+											<li>Players must be 21 or over</li>
+											<li>Winner of 'The Most Transparent Casino' in CoinBets Awards 2023</li>
+											<li>Unique rewarding system</li>
+											<li>Multiple currencies in one account</li>
+											<li>Various responsible gambling options available</li>
+											<li>Live chat support is available 24/7</li>
+										</ul>
+									</div>
+									<div class="review-list-w _r-neg">
+										<div class="review-list-t">Negative</div>
+										<ul class="review-list">
+											<li>Livechat is not available for all website languages</li>
+											<li>Not all payment methods are available for all countries</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="reviews-filter-w mt-3">
+								<div class="reviews-filter-t">Verified User reviews</div>
+								<div class="reviews-filter-s select-v2">
+									<select>
+										<option>Newest</option>
+										<option>Newest2</option>
+										<option>Newest3</option>
+									</select>
+								</div>
+							</div>
+							<div class="reviews-list">
+								{% for i in range(0, 3) %}
+								<div class="review">
+									<div class="review-t">
+										<div class="review-t-l">
+											<div class="review-t-l-img">
+												<img src="img/ico8.png" alt="avatar">
+											</div>
+											<div class="review-t-l-txt">
+												<div class="h6-500">Dejel221</div>
+												<div class="g-review-tags">
+													<div class="g-review-tag {% if loop.first %}_bg-green{% endif %}">{% if loop.first %}Verified Reviewer{% else %}Expert Reviewer{% endif %}</div>
+												</div>
+												<div class="g-review-stars _ai-b mb-0">
+													<div class="g-review-num"><b>4.8</b>/ 5</div>&nbsp;
+													{{ global.starsMacro(4.8)}}
+												</div>
+												<div class="g-review-time">Reviewed<span>1 week ago</span></div>
+											</div>
+										</div>
+										<div class="review-t-r">
+											{% include 'src/template/r-slider.html' %}
+										</div>
+									</div>
+									<div class="review-m">
+										<p>At the beginning I really thought that this casino would become my favorite casino. <br> The first payouts were super fast, within a few hours or even minutes. When I started withdrawing more money, the payments were held back. Apparently this was my bank's fault. Which can't be 100% true. At the moment there are still 950€ outstanding which have been in progress for days. I have slowly lost my trust in the casino! I will file a complaint. The casino advertises payouts within 9 minutes 😂</p>
+									</div>
+									<div class="review-b">
+										<div class="review-list-w _r-pos">
+											<div class="review-list-t">Positive</div>
+											<ul class="review-list">
+												<li>The first 5-6 payouts quickly</li>
+												<li>Fast verification</li>
+											</ul>
+										</div>
+										<div class="review-list-w _r-neg">
+											<div class="review-list-t">Negative</div>
+											<ul class="review-list">
+												<li>Payments are withheld</li>
+												<li>You have to upload a lot of evidence</li>
+											</ul>
+										</div>
+										<div class="review-list-w _r-rait">
+											<div class="review-list-like">
+												<button class="review-list-like-btn">like button</button>
+												<span class="review-list-like-txt">Useful </span>
+												<span class="review-list-like-num">3</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								{% endfor %}
+								<div class="filter-r-more">
+									<a href="#" class="button _btn-white _btn-xl _arrow">Show more review <span>+10</span></a>
+								</div>
+							</div>
+							<div class="r-w">
+								<div class="mb-1"><a href="#" class="button _btn-green _arrow">Visit Official Website</a></div>
+								<h3 class="h6-500">Contact info for Lucky Block</h3>
+								<dl>
+									<dt>Address</dt>
+									<dd><a href="#">2 Greenhills Ave, Moorebank NSW 2170</a></dd>
+									<dt>Email</dt>
+									<dd><a href="mailto:hello@luckyblock.com">hello@luckyblock.com</a></dd>
+									<dt>Phone</dt>
+									<dd><a href="phone:1300 371 571">1300 371 571</a></dd>
+								</dl>
+							</div>
+							<div class="r-w">
+								<h4>Author & Guarantor</h4>
+								<div class="r-user-w">
+									<div class="r-user-img">
+										<img src="img/ico19.jpg" alt="avatar">
+									</div>
+									<div class="r-user-info">
+										<div class="h6-500">Veronika Lash</div>
+										<p>Last updated: 12 Jun 2024</p>
+										<p><strong>Anything incorrect or missing?</strong></p>
+										<p><a href="#" class="button _btn-blue _btn-xs _btn-w-a">Let me know</a></p>
+									</div>
+								</div>
+							</div>
+							</div>
+							</div>
+							<div class="r-main-i" data-tab="contact-form-section-1">
+								<div class="r-w">
+									<div class="r-t-w">
+										<h3 class="h4">Oshi Casino Bonues</h3>
+										<div class="g-review-rating"><b>4.9</b>CoinBets Rating</div>
+									</div>
+									<div class="mob-more">
+										<div class="mob-more-h">
+											<p>Explore all the bonuses Oshi Casino has to offer, from no deposit bonuses to first deposit welcome offers. You'll see bonuses tailored to players in your country first, but if you're curious, you can also click below to view offers available to players from other regions. Just remember, those offers won't be accessible to you.</p>
+											<p>Explore all the bonuses Oshi Casino has to offer, from no deposit bonuses to first deposit welcome offers. You'll see bonuses tailored to players in your country first, but if you're curious, you can also click below to view offers available to players from other regions. Just remember, those offers won't be accessible to you.</p>
+										</div>
+										<button class="mob-more-btn button _btn-gray _btn-w100 _arrow">Read more</button>
+								</div>
+								</div>
+								<div class="filter-r-list">
+									{% for i in range(0, 7) %}
+									<div class="filter-r">
+										<div class="filter-r-img">
+											<img src="img/logo1.png" alt="logo">
+										</div>
+										<div class="filter-r-txt">
+											<div class="filter-r-mob-w">
+											<div class="filter-r-img">
+												<img src="img/logo1.png" alt="logo">
+											</div>
+											<h3 class="h4">Lucky Block <div class="gray-cta _v2">BEST REVIEW</div></h3>
+											<div class="filter-r-stars">
+												<div class="filter-r-stars-l">
+													<div class="star-one"></div>
+													<b>5.0</b>
+													User Rating
+													{{ global.starsMacro()}}
+												</div>
+												<span>|</span>
+												<div class="filter-r-stars-r">
+													<b>4.8</b>
+													Coinbet Rating
+												</div>
+												<div class="filter-r-stars-index">
+													Safety Index:
+													<span>High</span>
+												</div>
+											</div>
+											</div>
+											<div class="filter-r-bonus-g">
+												<span class="filter-r-bonus-txt">$77 No Deposit Bonus</span>
+												<a href="#" class="button _btn-green _arrow">Get Bonus</a>
+											</div>
+											<div class="filter-r-lists">
+												<div class="filter-r-list">
+													<div class="filter-r-list-opener">No deposit bonus for new players</div>
+													<div class="filter-r-list-hidden">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, laboriosam vel, provident maiores quis.</p>
+													</div>
+												</div>
+												<div class="filter-r-list">
+													<div class="filter-r-list-opener">Wagering requirements: 40x </div>
+													<div class="filter-r-list-hidden">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, laboriosam vel, provident maiores quis.</p>
+													</div>
+												</div>
+												<div class="filter-r-list">
+													<div class="filter-r-list-opener">Maximum bet: $10</div>
+													<div class="filter-r-list-hidden">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, laboriosam vel, provident maiores quis.</p>
+													</div>
+												</div>
+												<div class="filter-r-list">
+													<div class="filter-r-list-opener">The process of getting this bonus should be relatively FAST</div>
+													<div class="filter-r-list-hidden">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, laboriosam vel, provident maiores quis.</p>
+													</div>
+												</div>
+												<div class="filter-r-list">
+													<div class="filter-r-list-opener">Terms and conditions</div>
+													<div class="filter-r-list-hidden">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, laboriosam vel, provident maiores quis.</p>
+													</div>
+												</div>
+											</div>
+											<div class="filter-r-bonus-promo">
+												<div class="filter-r-bonus-promo-l">
+													<p>How to get bonus</p>
+													<div class="filter-r-bonus-promo-txt">Activate bonus in your casino</div>
+												</div>
+												<div class="filter-r-bonus-promo-r">
+													<button class="filter-r-bonus-copy">77FREECHIP</button>
+												</div>
+											</div>
+											<div class="filter-r-bonus">
+												<span>Has this Bonus Worked for you.</span>
+												<div class="filter-r-bonus-btns">
+													<button class="filter-r-bonus-btn _yes">Yes</button>
+													<button class="filter-r-bonus-btn _no">No</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									{% endfor %}
+									<div class="filter-r-more">
+										<a href="#" class="button _btn-white _btn-xl _arrow">Show more bonuses <span>+10</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="r-main-i" data-tab="contact-form-section-2">
+								<div class="r-w">
+									<div class="u-feedback-w">
+									<div class="r-w-t">
+										<span class="fw-500">Do you have any experience with this LuckBlock?</span>
+										<a href="#write-review" class="button _btn-blue _btn-xl _btn-w-a popup-show">Write a Review <i class="i-sico40"></i></a>
+										{% include 'src/template/popup-write-review.html' %}
+									</div>
+									<div class="u-feedback">
+										<div class="u-feedback-l">
+											<div class="u-feedback-t-pre">User feedback:</div>
+											<div class="u-feedback-t">4.7 - EXCELLENT</div>
+											<div class="u-feedback-t-sub">133 total</div>
+										</div>
+										<div class="u-feedback-r">
+											<div class="u-feedback-num-list">
+												<div class="u-feedback-num">
+													<div class="u-feedback-num-t">5</div>
+													<div class="u-feedback-num-t-sub">EXCELLENT</div>
+												</div>
+												<div class="u-feedback-num">
+													<div class="u-feedback-num-t">4</div>
+													<div class="u-feedback-num-t-sub">GOOD</div>
+												</div>
+												<div class="u-feedback-num">
+													<div class="u-feedback-num-t">3</div>
+													<div class="u-feedback-num-t-sub">OK</div>
+												</div>
+												<div class="u-feedback-num">
+													<div class="u-feedback-num-t">2</div>
+													<div class="u-feedback-num-t-sub">BAD</div>
+												</div>
+												<div class="u-feedback-num">
+													<div class="u-feedback-num-t">1</div>
+													<div class="u-feedback-num-t-sub">TERRIBLE</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="star-f">
+										<label class="star-f-l">
+											<input type="checkbox">
+											<span class="star-f-s">5-star</span>
+											<span class="star-f-indicator" style="--star-f-percent: 90%"></span>
+											<span class="star-f-p">90%</span>
+										</label>
+										<label class="star-f-l">
+											<input type="checkbox">
+											<span class="star-f-s">4-star</span>
+											<span class="star-f-indicator" style="--star-f-percent: 3%"></span>
+											<span class="star-f-p">3%</span>
+										</label>
+										<label class="star-f-l">
+											<input type="checkbox">
+											<span class="star-f-s">3-star</span>
+											<span class="star-f-indicator" style="--star-f-percent: 3%"></span>
+											<span class="star-f-p">3%</span>
+										</label>
+										<label class="star-f-l">
+											<input type="checkbox">
+											<span class="star-f-s">2-star</span>
+											<span class="star-f-indicator" style="--star-f-percent: 2%"></span>
+											<span class="star-f-p">2%</span>
+										</label>
+										<label class="star-f-l">
+											<input type="checkbox">
+											<span class="star-f-s">1-star</span>
+											<span class="star-f-indicator" style="--star-f-percent: 2%"></span>
+											<span class="star-f-p">2%</span>
+										</label>
+									</div>
+									</div>
+								</div>
+								<div class="reviews-filter-w mt-3">
+									<div class="h3">Reviews</div>
+									<div class="reviews-filter-s select-v2">
+										<select>
+											<option>Filter</option>
+											<option>Filter2</option>
+											<option>Filter3</option>
+										</select>
+										<select>
+											<option>Newest</option>
+											<option>Newest2</option>
+											<option>Newest3</option>
+										</select>
+									</div>
+								</div>
+								<div class="reviews-list">
+									{% for i in range(0, 6) %}
+									<div class="review">
+										<div class="review-t">
+											<div class="review-t-l">
+												<div class="review-t-l-img">
+													<img src="img/ico8.png" alt="avatar">
+												</div>
+												<div class="review-t-l-txt">
+													<div class="h6-500">Dejel221</div>
+													<div class="g-review-tags">
+														<div class="g-review-tag {% if loop.first %}_bg-green{% endif %}">{% if loop.first %}Verified Reviewer{% else %}Expert Reviewer{% endif %}</div>
+													</div>
+													<div class="g-review-stars _ai-b mb-0">
+														<div class="g-review-num"><b>4.8</b>/ 5</div>&nbsp;
+														{{ global.starsMacro(4.8)}}
+													</div>
+													<div class="g-review-time">Reviewed<span>1 week ago</span></div>
+												</div>
+											</div>
+											<div class="review-t-r">
+												{% include 'src/template/r-slider.html' %}
+											</div>
+										</div>
+										<div class="review-m">
+											<p>At the beginning I really thought that this casino would become my favorite casino. <br> The first payouts were super fast, within a few hours or even minutes. When I started withdrawing more money, the payments were held back. Apparently this was my bank's fault. Which can't be 100% true. At the moment there are still 950€ outstanding which have been in progress for days. I have slowly lost my trust in the casino! I will file a complaint. The casino advertises payouts within 9 minutes 😂</p>
+										</div>
+										<div class="review-b">
+											<div class="review-list-w _r-pos">
+												<div class="review-list-t">Positive</div>
+												<ul class="review-list">
+													<li>The first 5-6 payouts quickly</li>
+													<li>Fast verification</li>
+												</ul>
+											</div>
+											<div class="review-list-w _r-neg">
+												<div class="review-list-t">Negative</div>
+												<ul class="review-list">
+													<li>Payments are withheld</li>
+													<li>You have to upload a lot of evidence</li>
+												</ul>
+											</div>
+											<div class="review-list-w _r-rait">
+												<div class="review-raiting-num">4.8</div>
+												<p>Helpful rating</p>
+											</div>
+										</div>
+									</div>
+									{% endfor %}
+								</div>
+								<div class="filter-r-more">
+									<a href="#" class="button _btn-white _btn-xl _arrow">Show more reviews <span>+5</span></a>
+								</div>
+							</div>
+							<div class="r-main-i" data-tab="contact-form-section-3">
+								<div class="reviews-filter-w mt-3">
+									<div class="reviews-filter-t">Reviews</div>
+									<div class="reviews-filter-s select-v2">
+										<select>
+											<option>Filter</option>
+											<option>Filter2</option>
+											<option>Filter3</option>
+										</select>
+										<select>
+											<option>Newest</option>
+											<option>Newest2</option>
+											<option>Newest3</option>
+										</select>
+									</div>
+								</div>
+								<div class="r-w">
+									<h3 class="h4">Safety Index of Lucky Block explained</h3>
+									<p>Take a look at the explanation of factors that we consider when calculating the Safety Index rating of Oshi Casino. The Safety Index is the main metric we use to describe the trustworthiness, fairness, and quality of all online casinos in our database.</p>
+									<div class="g-index">
+										<div class="g-index-num">
+											<div class="g-review-num"><b>9.2</b>/ 10</div>
+											<div class="g-index-num-b"><div class="g-review-index">Safety Index: <span>High</span></div></div>
+										</div>
+										<div class="g-index-list">
+											<div class="g-index-list-i"><strong>Medium-sized casino,</strong> based on our research and estimates</div>
+											<div class="g-index-list-i">Medium-sized casino, based on our research and estimates</div>
+											<div class="g-index-list-i">No player complaints or very low value of withheld winnings in complaints in relation to the casino's size</div>
+											<div class="g-index-list-i">We also considered other factors, which had a <strong>neutral impact</strong> on the casino's Safety Index</div>
+										</div>
+									</div>
+									<hr class="xs">
+									<p>The Safety Index of this casino was calculated based on our research and data collected by our casino review team. Learn more about casino review methodolog</p>
+									<div class="r-w-t"><span class="fw-500">Has this casino done something unfair to you?</span> <a href="#!" class="button _btn-red _btn-xl">Submit a complain <i class="i-sico40"></i></a></div>
+								</div>
+								<div class="r-w2">
+									<p class="txt-c fw-500">Complaints about Oshi Casino and related casinos (26)</p>
+								</div>
+								<div class="r-w">
+									<div class="g-verdict _resolved">
+										<div class="g-verdict-t">
+											<div class="g-verdict-ico">
+												<i class="i-sico79"></i>
+											</div>
+											<div class="g-verdict-info">
+												<h3 class="h4">Player's withdrawal is stuck in pending state.</h3>
+												<div class="g-verdict-status">Our Verdict <span>Resolved</span></div>
+											</div>
+										</div>
+									</div>
+									<ul class="info-list">
+										<li>
+											<div>Disputed amount</div>
+											<div><b>A$2,296</b></div>
+										</li>
+										<li>
+											<div>Submitted</div>
+											<div><b>18 May 2024</b></div>
+										</li>
+									</ul>
+									<p>The player from Australia had a pending withdrawal request from two weeks prior with Oshi Casino. Despite contacting support numerous times, he had received non-conclusive responses about technical and finance department issues. After our intervention, the casino confirmed issues with their payment provider and offered alternative withdrawal methods. The player received part of his winnings within 24 hours and the remaining amount after 6 days. The complaint was resolved successfully.</p>
+								</div>
+								<div class="r-w">
+									<div class="g-verdict">
+										<div class="g-verdict-t">
+											<div class="g-verdict-ico">
+												<i class="i-sico79"></i>
+											</div>
+											<div class="g-verdict-info">
+												<h3 class="h4">Player's withdrawal is stuck in pending state.</h3>
+												<div class="g-verdict-status">Our Verdict <span>Case Closed</span></div>
+											</div>
+										</div>
+									</div>
+									<ul class="info-list">
+										<li>
+											<div>Disputed amount</div>
+											<div><b>A$2,296</b></div>
+										</li>
+										<li>
+											<div>Submitted</div>
+											<div><b>18 May 2024</b></div>
+										</li>
+									</ul>
+									<p>The player from Australia had a pending withdrawal request from two weeks prior with Oshi Casino. Despite contacting support numerous times, he had received non-conclusive responses about technical and finance department issues. After our intervention, the casino confirmed issues with their payment provider and offered alternative withdrawal methods. The player received part of his winnings within 24 hours and the remaining amount after 6 days. The complaint was resolved successfully.</p>
+								</div>
+								<div class="r-w">
+									<div class="g-verdict">
+										<div class="g-verdict-t">
+											<div class="g-verdict-ico">
+												<img src="img/sico80.svg" alt="">
+											</div>
+											<div class="g-verdict-info">
+												<h3 class="h4">Player's withdrawal is stuck in pending state.</h3>
+												<div class="g-verdict-status">Our Verdict <span>Player stop responding</span></div>
+												<div class="g-verdict-t-sub">
+													<div class="g-verdict-view select-sm">
+														<select>
+															<option>View Case</option>
+															<option>Case 1</option>
+															<option>Case 2</option>
+															<option>Case 3</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="r-w">
+									<div class="g-verdict">
+										<div class="g-verdict-t">
+											<div class="g-verdict-ico">
+												<img src="img/sico80.svg" alt="">
+											</div>
+											<div class="g-verdict-info">
+												<h3 class="h4">Player's withdrawal is stuck in pending state.</h3>
+												<div class="g-verdict-status">Our Verdict <span>Player stop responding</span></div>
+												<div class="g-verdict-t-sub">
+													<div class="g-verdict-view select-sm">
+														<select>
+															<option>View Case</option>
+															<option>Case 1</option>
+															<option>Case 2</option>
+															<option>Case 3</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="r-main-i" data-tab="contact-form-section-4">
+								<div class="r-w2">
+									<h3 class="h6-700">Lucky Block Discussion</h3>
+									<p>Discuss anything related to Oshi Casino with fellow players, share your thoughts, or find answers to your questions.</p>
+								</div>
+								<div class="reviews-filter-w mt-3">
+									<div class="h3">Forum</div>
+									<div class="reviews-filter-s select-v2">
+										<select>
+											<option>Filter</option>
+											<option>Filter2</option>
+											<option>Filter3</option>
+										</select>
+										<select>
+											<option>Newest</option>
+											<option>Newest2</option>
+											<option>Newest3</option>
+										</select>
+									</div>
+								</div>
+								<div class="forum-message-list">
+								<div class="r-w">
+									<div class="forum-t">
+										<div class="forum-t-img">
+											<img src="img/ico8.png" alt="avatar">
+										</div>
+										<div class="forum-t-info">
+											<div class="h6-500">Dejel221</div>
+											<div class="forum-t-topic">Forum and Reviews Administrator</div>
+											<div class="forum-t-time">1 month ago</div>
+										</div>
+									</div>
+									<hr class="xs">
+									<div class="forum-message-pre">
+										<p>Hi Jaro,</p>
+										<p>Yes, I'm quite sure both will eventually come through. <br> As an update, only the $1008 via "MIFINITY_AU" has came through (within 24 hours of request). However the other $1288 via "WIRE" has yet received (it's been 3 days so far since request)</p>
+										<p>Both bank transfer withdraw were to the same bank account. <br> They did state 3-10 days for bank transfer withdraw, so let's wait and see.</p>
+									</div>
+									<div class="forum-message">
+										<p>As I was looking at your complaint just now, they wrote you off. The problem with them is that the payment provider has some trouble, but you've probably heard that enough. </p>
+										<p>Apparently they are going to send you an email recommending another method of withdrawal as this one has failed several times. Have you received anything yet or not ? I hope it will turn out well and you will be able to withdraw everything. 🙂</p>
+									</div>
+									<hr class="xs">
+									<div class="useful-w">
+										<span class="useful-txt">This is useful</span>
+										<button class="useful-btn">useful button</button>
+										<span class="useful-num">4</span>
+									</div>
+								</div>
+								<div class="r-w">
+									<div class="forum-t">
+										<div class="forum-t-img"><img src="img/ico8.png" alt="avatar"></div>
+										<div class="forum-t-info">
+											<div class="h6-500">Dejel221</div>
+											<div class="forum-t-topic">Forum and Reviews Administrator</div>
+											<div class="forum-t-time">1 month ago</div>
+										</div>
+									</div>
+									<hr class="xs">
+									<div class="forum-message">
+										<p>Thanks Jaro! Yes, they did email me. I'm not too sure is it because they decided to send me the email as a result of the complaint on CoinBets or becasue I sent an email to suppport@oshi.io today. Eitherway, I'm glad there is some progress. They have requested me to send it via Bank Transfer, so I did. They had 2 bank transfer partners "WIRE" & "MIFINITY_AU". • So I transferred $1288 via "WIRE" and $1008 via "MIFINITY_AU" Their withdraw page stated it will take 3-10 days to clear. It's a shame that they didn't tell me to do this earlier. I do feel their live chat support is hopeless. I suggest anyone has REAL problem with Oshi Casino to email support@oshi.io rather than talking to the live chat. Will keep you guys posted to see if I do eventually get my money!</p>
+									</div>
+									<hr class="xs">
+									<div class="useful-w">
+										<span class="useful-txt">This is useful</span>
+										<button class="useful-btn">useful button</button>
+										<span class="useful-num">4</span>
+									</div>
+								</div>
+								<div class="r-w">
+									<div class="forum-t">
+										<div class="forum-t-img"><img src="img/ico8.png" alt="avatar"></div>
+										<div class="forum-t-info">
+											<div class="h6-500"><a href="#">Dejel221</a></div>
+											<div class="forum-t-topic">Forum and Reviews Administrator</div>
+											<div class="forum-t-time">1 month ago</div>
+										</div>
+									</div>
+									<hr class="xs">
+									<div class="forum-message">
+										<p>You're welcome, and we'll definitely wait for an update. Hopefully this time the withdrawals will go through and you'll get your money. I see that you split both withdrawals, so I firmly believe that neither bank transfer will fail. Good luck. *</p>
+									</div>
+									<hr class="xs">
+									<div class="useful-w">
+										<span class="useful-txt">This is useful</span>
+										<button class="useful-btn">useful button</button>
+										<span class="useful-num">4</span>
+									</div>
+								</div>
+								</div>
+								<div class="bg-dark-radius-inner py-5 px-3 mt-2 text-white txt-c">
+									<h3 class="h6">Join the community </h3>
+									<h3>You must be logged in to add a post.</h3>
+									<p><a href="#" class="button _btn-w-a">Join Forum</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="r-bar">
+							<div class="r-w">
+								<h3 class="h4"><strong>Crypto Payments</strong></h3>
+								<div class="filter-r-bottom-crypto _big-imgs">
+									<img src="img/ico1.png" alt="">
+									<img src="img/ico2.png" alt="">
+									<img src="img/ico4.png" alt="">
+									<img src="img/ico6.png" alt="">
+									<div class="filter-r-bottom-more-w">
+										{% include 'src/template/filter-r-bottom-more.html' %}
+									</div>
+								</div>
+								<div class="gray-cta">
+									<img src="img/sico12.svg" alt="">
+									<span>Bonus</span>
+									<span>300% up to $3,000</span>
+								</div>
+							</div>
+							<div class="r-bar-i" data-tab="contact-form-section-0">
+							<div class="r-w">
+								<div class="r-slider-v2">
+									{% include 'src/template/r-slider.html' %}
+								</div>
+							</div>
+							<div class="r-w">
+								<div class="r-w-g">
+									<img src="img/flag-uk.svg" alt="">
+									<span>Accepts players from England</span>
+									<img src="img/sico13-v2.svg" alt="" width="26">
+								</div>
+							</div>
+							<div class="r-w">
+								<div class="r-w-g-list">
+									<div class="r-w-g">
+										<img src="img/flag-uk.svg" alt="">
+										<span>English website</span>
+										<div class="gray-cta _sm">All Languages (7)</div>
+									</div>
+									<div class="r-w-g">
+										<img src="img/flag-uk.svg" alt="">
+										<span>English customer</span>
+										<div class="gray-cta _sm">All Languages (7)</div>
+									</div>
+								</div>
+							</div>
+							<div class="r-w">
+								<h3 class="h4">Games</h3>
+								<div class="g-list">
+									<div class="g-list-i">
+										<i class="i-sico60"></i>Slots
+									</div>
+									<div class="g-list-i">
+										<i class="i-sico61"></i>Roulette
+									</div>
+									<div class="g-list-i">
+										<i class="i-sico62"></i>BlackJack
+									</div>
+									<div class="g-list-i">
+										<i class="i-sico63"></i>Video Poker
+									</div>
+									<div class="g-list-i">
+										<i class="i-sico68"></i>Bingo
+									</div>
+									<div class="g-list-i">
+										<i class="i-sico71"></i>Jackpot games
+									</div>
+									<div class="g-list-i _gray">
+										<i class="i-sico73"></i>Sports betting
+									</div>
+									<div class="g-list-more">
+										<button class="button _btn-black g-list-more-btn">Show all</button>
+										<div class="g-list-more-h">
+											<h3 class="h6">Games</h3>
+											<div class="g-list">
+												<div class="g-list-i">
+													<i class="i-sico61"></i>Roulette
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico60"></i>Slots
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico62"></i>BlackJack
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico63"></i>Video Poker
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico64"></i>Bingo
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico71"></i>Jackpot games
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico66"></i>Baccarat
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico67"></i>Live Games
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico68"></i>Craps and dice
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico69"></i>Scratch cards
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico70"></i>Betting 7
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico71"></i>Jackpot games
+												</div>
+												<div class="g-list-i">
+													<i class="i-sico72"></i>Keno
+												</div>
+												<div class="g-list-i _gray">
+													<i class="i-sico73"></i>Sports betting
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="r-w d-md-none">
+								<h3 class="h4">Information</h3>
+								<div class="filter-r-limit-g">
+									<div>
+										<h6 class="h6">Withdrawal limits</h6>
+										<p>$200,000 Monthly <br> $5,000 weekly</p>
+									</div>
+									<div>
+										<h6 class="h6">Bonus</h6>
+										<p>150% up to $3,000</p>
+									</div>
+								</div>
+								<dl class="dl-info">
+									<dt>OWNER </dt>
+									<dd>Rabidi N.V. </dd>
+									<dt>ESTABLISHED</dt>
+									<dd>2023</dd>
+									<dt>ESTIMATED ANNUAL REVENUES </dt>
+									<dd>< €1,000,000</dd>
+									<dt>LICENSING AUTHORITIES</dt>
+									<dd><img src="img/flag-uk.svg" alt=""> Curação (ANT)</dd>
+								</dl>
+							</div>
+							<div class="r-w">
+								<h3 class="h4">Game providers<h3/>
+								<div class="g-imgs-game">
+									<div>
+										<img src="img/logo8.png" alt="logo">
+									</div>
+									<div>
+										<img src="img/logo9.png" alt="logo">
+									</div>
+									<div>
+										<img src="img/logo10.png" alt="logo">
+									</div>
+									<div>
+										<img src="img/logo11.png" alt="logo">
+									</div>
+								</div>
+								<div class="g-imgs-more">
+									<a href="#!" class="g-imgs-more-btn">Show more</a>
+								</div>
+							</div>
+							<div class="r-w2">
+								{% include 'src/template/r-recommendation.html' %}
+							</div>
+							</div>
+							<div class="r-bar-i" data-tab="contact-form-section-1">
+								<div class="r-w2">
+									{% include 'src/template/r-recommendation.html' %}
+								</div>
+							</div>
+							<div class="r-bar-i" data-tab="contact-form-section-2">
+								<div class="r-w">
+									<h3 class="h4">Oshi Casino User Reviews</h3>
+									<p>Welcome to our Oshi Casino Review page! Read real player reviews or share your own experiences with Oshi Casino, covering its games, bonuses, customer support, and more. Whether you’ve had a great experience or faced challenges, your review will help others decide if Oshi Casino is the right choice for them. Share your insights today!</p>
+									<h3 class="h4">Contact Oshi Casino</h3>
+									<dl class="dl-lg">
+										<dt>Address</dt>
+										<dd><a href="#!">100 The Plaza, Malta </a></dd>
+										<dt>Email</dt>
+										<dd><a href="mailto:hello@luckyblock.com">hello@luckyblock.com</a></dd>
+										<dt>Phone</dt>
+										<dd><a href="tel:1300 371 571">1300 371 571</a></dd>
+									</dl>
+								</div>
+								<div class="r-w">
+									<h3 class="h4">Compare Best Crypto Casinos</h3>
+									<div class="best-list">
+										<div class="best-i">
+											<div class="best-img">
+												<img src="img/logo1.png" alt="logo">
+											</div>
+											<div class="best-info">
+												<div class="h6-500"><a href="#!">Oshi Casino</a></div>
+												<div class="best-stars">
+													<div class="star-one _4-5"></div>
+													4.9 (163)
+												</div>
+											</div>
+										</div>
+										<div class="best-i">
+											<div class="best-img">
+												<img src="img/logo1.png" alt="logo">
+											</div>
+											<div class="best-info">
+												<div class="h6-500"><a href="#!">Lucky Block</a></div>
+												<div class="best-stars">
+													<div class="star-one _3-4"></div>
+													3.9 (163)
+												</div>
+											</div>
+										</div>
+										<div class="best-i">
+											<div class="best-img">
+												<img src="img/logo1.png" alt="logo">
+											</div>
+											<div class="best-info">
+												<div class="h6-500"><a href="#!">Winz.io Casino</a></div>
+												<div class="best-stars">
+													<div class="star-one _2-3"></div>
+													2.9 (163)
+												</div>
+											</div>
+										</div>
+										<div class="best-i">
+											<div class="best-img">
+												<img src="img/logo1.png" alt="logo">
+											</div>
+											<div class="best-info">
+												<div class="h6-500"><a href="#!">Luck Charm Casino</a></div>
+												<div class="best-stars">
+													<div class="star-one _1-2"></div>
+													1.9 (163)
+												</div>
+											</div>
+										</div>
+										<div class="best-i">
+											<div class="best-img">
+												<img src="img/logo1.png" alt="logo">
+											</div>
+											<div class="best-info">
+												<div class="h6-500"><a href="#!">Luck Charm Casino</a></div>
+												<div class="best-stars">
+													<div class="star-one _0-1"></div>
+													1 (163)
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="r-bar-i" data-tab="contact-form-section-3">
+								<div class="r-w2">
+									{% include 'src/template/r-recommendation.html' %}
+								</div>
+							</div>
+							<div class="r-bar-i" data-tab="contact-form-section-4">
+								<div class="r-w2">
+									{% include 'src/template/r-recommendation.html' %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="text-white txt-c">
+				<div class="bg-dark-radius pt-10 pb-8">
+					<div class="container">
+						{% include 'src/template/recent-forums-chats.html' %}
+					</div>
+				</div>
+			</section>
+			<section class="my-12 my-md-3 entry">
+				<div class="container _w950">
+					{% include 'src/template/seo-metadata.html' %}
+				</div>
+			</section>
+			<section class="my-12 my-md-3">
+				<div class="container _w950">
+					{% include 'src/template/faq.html' %}
+				</div>
+			</section>
+		</main>
+
+		{% include 'src/template/footer.html' %}
+	</div>
+	{% include 'src/template/includes.html' %}
+</body>
+</html>

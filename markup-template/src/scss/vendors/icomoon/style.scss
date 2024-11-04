@@ -1,0 +1,319 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?vwgen5') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?vwgen5') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?vwgen5##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-sico82 {
+  &:before {
+    content: $i-sico82; 
+  }
+}
+.i-sico78 {
+  &:before {
+    content: $i-sico78; 
+  }
+}
+.i-sico79 {
+  &:before {
+    content: $i-sico79; 
+  }
+}
+.i-sico60 {
+  &:before {
+    content: $i-sico60; 
+  }
+}
+.i-sico61 {
+  &:before {
+    content: $i-sico61; 
+  }
+}
+.i-sico62 {
+  &:before {
+    content: $i-sico62; 
+  }
+}
+.i-sico63 {
+  &:before {
+    content: $i-sico63; 
+  }
+}
+.i-sico64 {
+  &:before {
+    content: $i-sico64; 
+  }
+}
+.i-sico65 {
+  &:before {
+    content: $i-sico65; 
+  }
+}
+.i-sico66 {
+  &:before {
+    content: $i-sico66; 
+  }
+}
+.i-sico67 {
+  &:before {
+    content: $i-sico67; 
+  }
+}
+.i-sico68 {
+  &:before {
+    content: $i-sico68; 
+  }
+}
+.i-sico69 {
+  &:before {
+    content: $i-sico69; 
+  }
+}
+.i-sico70 {
+  &:before {
+    content: $i-sico70; 
+  }
+}
+.i-sico71 {
+  &:before {
+    content: $i-sico71; 
+  }
+}
+.i-sico72 {
+  &:before {
+    content: $i-sico72; 
+  }
+}
+.i-sico73 {
+  &:before {
+    content: $i-sico73; 
+  }
+}
+.i-arrow-doble {
+  &:before {
+    content: $i-arrow-doble; 
+  }
+}
+.i-sico59 {
+  &:before {
+    content: $i-sico59; 
+  }
+}
+.i-sico26 {
+  &:before {
+    content: $i-sico26; 
+  }
+}
+.i-arrow-l {
+  &:before {
+    content: $i-arrow-l; 
+  }
+}
+.i-sico27 {
+  &:before {
+    content: $i-sico27; 
+  }
+}
+.i-sico28 {
+  &:before {
+    content: $i-sico28; 
+  }
+}
+.i-sico29 {
+  &:before {
+    content: $i-sico29; 
+  }
+}
+.i-sico30 {
+  &:before {
+    content: $i-sico30; 
+  }
+}
+.i-sico31 {
+  &:before {
+    content: $i-sico31; 
+  }
+}
+.i-sico37 {
+  &:before {
+    content: $i-sico37; 
+  }
+}
+.i-sico40 {
+  &:before {
+    content: $i-sico40; 
+  }
+}
+.i-sico44 {
+  &:before {
+    content: $i-sico44; 
+  }
+}
+.i-sico45 {
+  &:before {
+    content: $i-sico45; 
+  }
+}
+.i-sico46 {
+  &:before {
+    content: $i-sico46; 
+  }
+}
+.i-sico47 {
+  &:before {
+    content: $i-sico47; 
+  }
+}
+.i-sico48 {
+  &:before {
+    content: $i-sico48; 
+  }
+}
+.i-sico49 {
+  &:before {
+    content: $i-sico49; 
+  }
+}
+.i-sico52 {
+  &:before {
+    content: $i-sico52; 
+  }
+}
+.i-sico54 {
+  &:before {
+    content: $i-sico54; 
+  }
+}
+.i-sico58 {
+  &:before {
+    content: $i-sico58; 
+  }
+}
+.i-arrow-r {
+  &:before {
+    content: $i-arrow-r; 
+  }
+}
+.i-badge {
+  &:before {
+    content: $i-badge; 
+  }
+}
+.i-close {
+  &:before {
+    content: $i-close; 
+  }
+}
+.i-facebook {
+  &:before {
+    content: $i-facebook; 
+  }
+}
+.i-instagram {
+  &:before {
+    content: $i-instagram; 
+  }
+}
+.i-linkedin {
+  &:before {
+    content: $i-linkedin; 
+  }
+}
+.i-search {
+  &:before {
+    content: $i-search; 
+  }
+}
+.i-star {
+  &:before {
+    content: $i-star; 
+  }
+}
+.i-tiktok {
+  &:before {
+    content: $i-tiktok; 
+  }
+}
+.i-user {
+  &:before {
+    content: $i-user; 
+  }
+}
+.i-youtube {
+  &:before {
+    content: $i-youtube; 
+  }
+}
+.i-arrow-down {
+  &:before {
+    content: $i-arrow-down; 
+  }
+}
+.i-x {
+  &:before {
+    content: $i-x; 
+  }
+}
+.i-sico1 {
+  &:before {
+    content: $i-sico1; 
+  }
+}
+.i-sico2 {
+  &:before {
+    content: $i-sico2; 
+  }
+}
+.i-sico3 {
+  &:before {
+    content: $i-sico3; 
+  }
+}
+.i-sico4 {
+  &:before {
+    content: $i-sico4; 
+  }
+}
+.i-sico5 {
+  &:before {
+    content: $i-sico5; 
+  }
+}
+.i-sico6 {
+  &:before {
+    content: $i-sico6; 
+  }
+}
+.i-sico12 {
+  &:before {
+    content: $i-sico12; 
+  }
+}
+.i-sico22 {
+  &:before {
+    content: $i-sico22; 
+  }
+}
+

@@ -1,0 +1,291 @@
+---
+title: Home page
+---
+{% import 'src/template/macrosAndVariable.html' as global %}
+{% include 'src/template/head.html' %}
+
+<body>
+	<div class="wrapper offset-header">
+		{% include 'src/template/header.html' %}
+
+		<main class="main">
+			<section class="hero-s text-white">
+				<div class="container g-md-25">
+					<div class="hero-g">
+						<div class="hero-g-txt">
+							<h3 class="h5">The Leading RESOURCE FOR Crypto Gambling</h3>
+							<div class="hero-g-txt-w">
+								<div class="hero-g-txt-w-t">
+									<h1>Elevate Your Betting Experience</h1>
+									<h2 class="h4">Discover the Best Crypto Casinos and Crypto Sports Betting online!</h2>
+								</div>
+								<div class="hero-g-img-mob">
+									<img src="img/casino.png" alt="casinos">
+								</div>
+							</div>
+							<div class="hero-search">
+								<form>
+									<div class="hero-search-row">
+										<input type="text" placeholder="Search Crypto Casinos Now">
+										<input type="submit" value="">
+									</div>
+								</form>
+							</div>
+							<div class="hero-coin-list">
+								<img src="img/ico1.png" alt="coin">
+								<img src="img/ico2.png" alt="coin">
+								<img src="img/ico3.png" alt="coin">
+								<img src="img/ico4.png" alt="coin">
+								<img src="img/ico5.png" alt="coin">
+								<img src="img/ico6.png" alt="coin">
+							</div>
+							<p class="p-sm">Unbiased professional and user reviews for over 400 online crypto gambling sites. We are your dedicated resource for crypto casinos and crypto betting.</p>
+						</div>
+						<div class="hero-g-img">
+							<img src="img/casino.png" alt="casinos">
+						</div>
+					</div>
+					<div class="hero-links">
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<i class="i-sico1"></i>
+								<!-- <img class="hero-link-ico" src="img/sico1.svg" alt="ico"> -->
+							</div>
+							<h3 class="h6-500">Crypto Casinos</h3>
+							<div class="hero-link-num">208</div>
+						</a>
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<i class="i-sico2"></i>
+							</div>
+							<h3 class="h6-500">Sports Betting</h3>
+							<div class="hero-link-num">101</div>
+						</a>
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<i class="i-sico3"></i>
+							</div>
+							<h3 class="h6-500">Crypto Esport</h3>
+							<div class="hero-link-num">512</div>
+						</a>
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<i class="i-sico4"></i>
+							</div>
+							<h3 class="h6-500">User Reviews</h3>
+							<div class="hero-link-num">201</div>
+						</a>
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<i class="i-sico5"></i>
+							</div>
+							<h3 class="h6-500">Expert Reviews</h3>
+							<div class="hero-link-num">891</div>
+						</a>
+						<a class="hero-link" href="#">
+							<div class="hero-link-ico-w">
+								<i class="i-sico6"></i>
+							</div>
+							<h3 class="h6-500">Forum Posts</h3>
+							<div class="hero-link-num">20k</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="sub-hero-s txt-c">
+				<div class="container">
+					<h2>Your trusted source for unbiased reviews of <br> crypto casinos and crypto sports betting</h2>
+					<div class="d-grid _col-3 g-trusted bg-gray-half mt-6">
+						<div class="g-trusted-i">
+							<div class="g-trusted-top">
+							<div class="g-trusted-img"><img src="img/sico7.svg" alt="ico"></div>
+							<h3 class="h4">Transparency and Trust</h3></div>
+							<div class="g-trusted-bottom">
+							<p>We have no affiliation links, no partnerships with platforms, and no financial gain from the casinos we review, ensuring our reviews are completely impartial</p></div>
+						</div>
+						<div class="g-trusted-i">
+							<div class="g-trusted-top">
+							<div class="g-trusted-img"><img src="img/sico8.svg" alt="ico"></div>
+							<h3 class="h4">Verified User Reviews</h3></div>
+							<div class="g-trusted-bottom">
+							<p>Our platform features verified user reviews, using advanced verification methods to ensure authenticity and reliability.</p></div>
+						</div>
+						<div class="g-trusted-i">
+							<div class="g-trusted-top">
+							<div class="g-trusted-img"><img src="img/sico9.svg" alt="ico"></div>
+							<h3 class="h4">Community Driven</h3></div>
+							<div class="g-trusted-bottom">
+							<p>We foster a vibrant community through forums and discussions, allowing users to share experiences, tips, and insights, creating a supportive and informed gambling environment.</p></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="my-10 my-md-3 bg-gray2 txt-c">
+				<div class="container">
+					<h3 class="h6">Recent Reviews</h3>
+					<h2>Top Crypto Casinos, Sports Betting, <br> and Esports Sites</h2>
+					<div class="swiper g-reviews-s stars-blue">
+						<div class="swiper-wrapper g-reviews">
+						{{ global.reviewItem([{
+								t: "Lucky Block",
+								img: "img/logo1.png",
+								stars: "4.7"
+							},{
+								t: "BC Game",
+								img: "img/logo2.png"
+							},{
+								t: "Cloudbet",
+								img: "img/logo3.png"
+							},{
+								t: "Mega Dice",
+								img: "img/logo4.png"
+							},{
+								t: "Lucky Block",
+								img: "img/logo5.png"
+							},{
+								t: "Betpanda",
+								img: "img/logo6.png"
+							}
+						])}}
+						</div>
+					</div>
+					<div class="txt-c mt-5 d-md-none">
+						<a href="#" class="button  _btn-gray">See all Reviews</a>
+					</div>
+				</div>
+			</section>
+			<section class="py-10 py-md-5 bg-white">
+				<div class="container g-md-25 _w1170">
+					<div class="d-grid mb-10 mb-md-5">
+						<div>
+							<h3 class="h6">Recent GUIDES AND EXPERT Reviews</h3>
+							<h2>Expert Reviews & <br> Comprehensive Guides</h2>
+						</div>
+						<div>
+							<ul class="list-ico">
+								<li><strong>Helpful guides</strong>: Tailored to be valuable for crypto gamblers of all levels.</li>
+								<li><strong>Expert Reviews:</strong> Led by seasoned crypto and gambling professionals.</li>
+								<li><strong>In-depth original articles</strong> – we explore crypto casino topics thoroughly.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="swiper g-experts-s">
+						<div class="swiper-wrapper g-experts">
+						{{ global.expertItem([{
+							t: "How to start playing at a real money online casino",
+							img: "img/img1.jpg"
+						},{
+							t: "Real money games available at top online casinos",
+							img: "img/img2.jpg"
+						},{
+							t: "Online casino withdrawals",
+							img: "img/img3.jpg"
+						},{
+							t: "Which real money online casinos you should avoid",
+							img: "img/img4.jpg"
+						},{
+							t: "Find the best online casino using our helper tool",
+							img: "img/img5.jpg"
+						},{
+							t: "Advanced online casino list filters",
+							img: "img/img6.jpg"
+						},{
+							t: "Recent updates to our casino ",
+							img: "img/img7.jpg"
+						},{
+							t: "About our casino review team",
+							img: "img/img8.jpg"
+						},{
+							t: "How we review online casinos",
+							img: "img/img9.jpg"
+						}
+						])}}
+						</div>
+					</div>
+					<div class="txt-c mt-2_5">
+						<a href="#" class="button _btn-gray d-md-none">Load more</a>
+						<a href="#" class="button _btn-black d-none d-md-block">Visit Blogs</a>
+					</div>
+				</div>
+			</section>
+			<section class="text-white bg-white-half">
+				<div class="bg-dark-radius py-10">
+					<div class="container g-md-25">
+						<div class="container _w730 p-sm txt-c mb-6">
+							<h3 class="h6">Recent forum DISCUSSION</h3>
+							<h2>Join the Ultimate Crypto Gambling Community!</h2>
+							<p>Connect with fellow enthusiasts to share your big wins and gain expert tips from experienced players. Discuss strategy, games, and everything casino-related! Stay Protected with Community Insights, Learn from other players' experiences to make informed choices and hold operators accountable for fair practices.</p>
+							<div class="mt-4">
+								<a href="#" class="button">Join Forum</a>
+							</div>
+						</div>
+						<div class="swiper g-communitys-s">
+							<div class="swiper-wrapper g-communitys">
+							{{ global.communityItem([{
+								img: "img/sico21.svg",
+								t: "General Gambling Discussion",
+								txt: "Everything that’s related to casinos and gambling but doesn’t fit into other categories."
+							},{
+								img: "img/sico18.svg",
+								t: "Complaints Discussion",
+								txt: "Are you considering submitting a complaint about a casino? Discuss it with others here."
+							},{
+								img: "img/sico19.svg",
+								t: "Responsible Gambling",
+								txt: "Share your experience and
+								help other players."
+							},{
+								img: "img/sico20.svg",
+								t: "Competitions",
+								txt: "Regular competitions for all members. Win free spins, bonuses and cool prizes!"
+							},{
+								img: "img/sico23.svg",
+								t: "Casinos",
+								txt: "Anything related to online
+								casinos."
+							}
+							])}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-10 bg-gray">
+				<div class="container _w1040">
+					<div class="col-reviews">
+						<div class="col-top">
+							<h3 class="h6">Recent reviews from the community</h3>
+							<h2>Latest User Reviews <br> from our community</h2>
+						</div>
+						{{ global.userItem([
+							{
+							img: "img/logo5.png",
+							txt: "CryptoGameArena is fantastic! The interface is sleek, and the games are exciting. I won big on my first try. Highly recommend!"
+						},{
+							img: "img/logo1.png",
+							txt: "CryptoGameArena is the best crypto esports site I've tried so far. The game selection is vast, and the interface is incredibly user-friendly. I appreciate the detailed reviews and guides available on the site. Plus, the security measures are top-notch, ensuring my transactions are safe and swift. Highly recommended!"
+						},{
+							img: "img/logo7.png",
+							txt: "CryptoGameArena is fantastic! The interface is sleek, and the games are exciting. I won big on my first try. Highly recommend!",
+							imgClass: "_bg-yellow"
+						},{
+							img: "img/logo6.png",
+							txt: "CryptoGameArena is the best crypto esports site I've tried so far. The game selection is vast, and the interface is incredibly user-friendly. I appreciate the detailed reviews and guides available on the site. Plus, the security measures are top-notch, ensuring my transactions are safe and swift. Highly recommended!"
+						},{
+							img: "img/logo2.png",
+							txt: "BitBattleZone offers an excellent selection of games. The security measures give me peace of mind. Love the seamless crypto transactions."
+						}])}}
+						<p class="col-more-btns">
+							<a href="#" class="button _btn-gray col-review-more d-sm-none">More recent reviews</a>
+							<a href="#" class="button _btn-black col-review-more d-none d-sm-block">More Reviews</a>
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		{% include 'src/template/footer.html' %}
+	</div>
+	{% include 'src/template/includes.html' %}
+</body>
+</html>

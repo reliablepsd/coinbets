@@ -1,0 +1,131 @@
+@import "vendors/include-media";
+@import "base/variables";
+
+:root {
+	// === Base variable
+
+	// --- HTML style
+	--rem-base: 10px;
+
+	// --- Body style
+	--base-font-size: 16px;
+	--base-line-height: 1.5;
+	--vertical-rhythm: calc(var(--base-line-height) * 1em);
+
+	// --- Font-family
+	--base-main-font: 'HelveticaNeue';
+	--base-font-sans-serif: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+	--base-font-serif: "Times New Roman", "Times", "Baskerville", "Georgia", serif;
+	--base-font: var(--base-main-font), var(--base-font-sans-serif);
+	--accent-font: "Inter";
+
+	// --- Colors
+	--color-white: #fff;
+	--color-white-07: #{rgba(#fff, 0.7)};
+	--color-black: #000;
+	--color-black-05: #{rgba(#000, 0.5)};
+	--color-gray-l: #E4E8EC;
+	--color-gray: #F8F8F8;
+	--color-gray-d: #F1F1F1;
+	--color-dark: #051426;
+	--color-dark-100: #1C1C1C;
+	--color-dark-100-05: #{rgba(#1C1C1C, 0.5)};
+	--color-dark-100-06: #{rgba(#1C1C1C, 0.6)};
+	--color-dark-100-07: #{rgba(#1C1C1C, 0.7)};
+	--color-dark-200: #04101E;
+	--color-dark-300: #060D17;
+	--color-yellow: #E6B830;
+	--color-yellow-l: #{lighten(#E6B830, 10%)};
+	--color-yellow-d: #{darken(#E6B830, 10%)};
+	--color-blue: #003EB6;
+	--color-blue2: #1656A2;
+	--color-blue3: #00135E;
+	--color-blue-l: #20BCFF;
+	--color-green-d: #005B17;
+	--color-green: #1A8918;
+	--color-green-l: #23BA21;
+
+	// --- Colors theme
+	--brand-color: var(--color-dark-300);
+	--accent-color: var(--color-yellow);
+	--accent-blog-color: var(--accent-color); // used in default blog templates
+	--caption-color: var(--color-dark-300); // used in default blog templates
+
+	// --- Colors base
+	--base-text-color: var(--color-dark);
+	--base-link-color: var(--accent-color);
+	--h1-h6-color: var(--color-dark-300);
+
+	// --- Animation
+	--animation-duration: 0.3s;
+	--animation-timing-function: ease;
+
+	// --- Container
+	--container: 1304px;
+
+	// --- Gutter
+	--gutter: 25px;
+
+	@include media("iphoneX") {
+		//increase paddings that content didn't disturb notch for landscape orientation https://twitter.com/i/status/907911237983449088
+		--gutter: 50px;
+	}
+	@include media('<phone') {
+		--gutter: 15px;
+		& .g-md-25 {
+			--gutter: 25px;
+		}
+	}
+
+	// Form elements styling
+	--input-x: 12px;
+	--input-y: 14px;
+	--input-color: var(--color-dark-100-06);
+	--input-placeholder-color: inherit;
+	--input-bg-color: transparent;
+	--input-radius: 6px;
+	--input-border: 1px;
+	--input-border-color: #D1D5DB;
+	--input-focus-border-color: var(--color-gray);
+	--input-fz: 16px;
+	--input-lh: 1.25;
+
+	--form-theme-color: var(--brand-color);
+	--checkbox-size: 16px;
+	--radio-size: 16px;
+
+	--label-fz: 16px;
+	--label-lh: 1.4;
+	--label-color: currentColor;
+
+	--error-color: var(--color-red);
+	--error-bg-color: var(--color-red);
+
+	--form-col-gutter: 30px;
+	--form-row-margin: var(--form-col-gutter) * 1.5;
+
+	@include media('<tablet') {
+		--input-x: 20px;
+		--input-y: 12px;
+	}
+
+	// icon size
+	--icon-w: 32px;
+
+	--offset-header: 0px;
+
+	// --- Css variable for h1-h6 font-size
+	@each $name, $array in $h1-h6-font-size {
+		@if ($name == "default") {
+			@for $i from 1 through length($array) {
+				--h#{$i}: #{nth($array, $i)};
+			}
+		} @else {
+			@include media("<#{$name}") {
+				@for $i from 1 through length($array) {
+					--h#{$i}: #{nth($array, $i)};
+				}
+			}
+		}
+	}
+}

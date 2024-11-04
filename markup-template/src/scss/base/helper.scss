@@ -1,0 +1,140 @@
+// ------------------ GRID --------------------
+.d-grid {
+	--grid-gap: 2rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: var(--grid-gap);
+
+	@include media("<=tablet") {
+		grid-template-columns: 1fr;
+		&._col-md-2 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	&._col-3 {
+		@include media(">tablet") {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	&._col-4 {
+		@include media(">desktop") {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	&._gai-e {
+		align-items: end;
+	}
+	&._gai-c {
+		align-items: center;
+	}
+	&._gg-0 {
+		--grid-gap: 0;
+	}
+	&._gg-1 {
+		--grid-gap: 1rem;
+	}
+	&._gg-2 {
+		--grid-gap: 2rem;
+	}
+	&._gg-3 {
+		--grid-gap: 3rem;
+	}
+	&._gg-4 {
+		--grid-gap: 4rem;
+	}
+	&._gg-5 {
+		--grid-gap: 5rem;
+	}
+	&._gg-6 {
+		--grid-gap: 6rem;
+	}
+}
+
+// ------------------ INDENT --------------------
+$spacer: 1rem !default;
+$indentAray: (
+	0: 0,
+	1: $spacer * 1,
+	2: $spacer * 2,
+	2_5: $spacer * 2.5,
+	3: $spacer * 3,
+	4: $spacer * 4,
+	5: $spacer * 5,
+	6: $spacer * 6,
+	7: $spacer * 7,
+	8: $spacer * 8,
+	9: $spacer * 9,
+	10: $spacer * 10,
+	12: $spacer * 12,
+);
+
+$spacerMob: 10px !default;
+$indentArayMob: (
+	0: 0,
+	1: $spacerMob * 1,
+	2: $spacerMob * 2,
+	3: $spacerMob * 3,
+	4: $spacerMob * 4,
+	5: $spacerMob * 5,
+	6: $spacerMob * 6
+);
+
+@each $name, $size in $indentAray {
+	.mt-#{$name},
+	.my-#{$name} {
+		margin-top: $size;
+	}
+	.mb-#{$name},
+	.my-#{$name} {
+		margin-bottom: $size;
+	}
+	.pt-#{$name},
+	.py-#{$name} {
+		padding-top: $size;
+	}
+	.pb-#{$name},
+	.py-#{$name} {
+		padding-bottom: $size;
+	}
+}
+
+@each $name, $size in $indentArayMob {
+	@include media("<=tablet") {
+		.mt-md-#{$name},
+		.my-md-#{$name} {
+			margin-top: $size;
+		}
+		.mb-md-#{$name},
+		.my-md-#{$name} {
+			margin-bottom: $size;
+		}
+		.pt-md-#{$name},
+		.py-md-#{$name} {
+			padding-top: $size;
+		}
+		.pb-md-#{$name},
+		.py-md-#{$name} {
+			padding-bottom: $size;
+		}
+	}
+}
+
+.px-3 {
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.mx-a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ml-a {
+	margin-left: auto;
+}
+
+.mr-a {
+	margin-left: auto;
+}

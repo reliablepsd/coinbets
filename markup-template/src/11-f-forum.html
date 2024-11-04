@@ -1,0 +1,217 @@
+---
+title: Forume page
+---
+{% import 'src/template/macrosAndVariable.html' as global %}
+{% include 'src/template/head.html' %}
+
+<body>
+	<div class="wrapper offset-header">
+		{% include 'src/template/header.html' %}
+
+		<main class="main" data-tabs="contact-form-section-2">
+			<section class="pt-3 bg-blue-d-v2 text-white">
+				<div class="container">
+					<div class="breadcrumb mb-1 d-md-none">
+						<div class="breadcrumb-trail"> <a href="https://basethemedevel.wpengine.com/" title="Base Theme" rel="home" class="trail-begin">Home</a> <span class="sep">/</span> Forum</div>
+					</div>
+					<div class="grid-txt-w">
+						<div class="grid-txt-c">
+							<div class="grid-txt">
+								<h3 class="h5">our community</h3>
+								<h1 class="h1">Welcome to the CoinBets Community</h1>
+								<div class="grid-txt-ico-mob-g">
+								<h2 class="h4">Top esports betting sites for 2024, reviewed, tested, and ranked by industry experts. Explore our curated list of the best platforms and choose the perfect site for your esports bets.</h2>
+								<div class="grid-txt-ico _w-md-50p d-none d-md-block">
+									<img src="img/img1.jpg" alt="img">
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid-txt-ico _w50p d-md-none">
+							<img src="img/img1.jpg" alt="img">
+						</div>
+					</div>
+					<div class="hero-links _v2 _yellow-v">
+						<a class="hero-link" href="#!" data-tab-btn="contact-form-section-0">
+							<div class="hero-link-ico-w">
+								<i class="i-sico5"></i>
+							</div>
+							<h3 class="h6-500">Category </h3>
+						</a>
+						<a class="hero-link" href="#!" data-tab-btn="contact-form-section-1">
+							<div class="hero-link-ico-w">
+								<i class="i-sico78"></i>
+							</div>
+							<h3 class="h6-500">Latest Posts</h3>
+						</a>
+						<a class="hero-link _active-tab" href="#!" data-tab-btn="contact-form-section-2">
+							<div class="hero-link-ico-w">
+								<i class="i-sico82"></i>
+							</div>
+							<h3 class="h6-500">Hot Threads</h3>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="my-10 my-md-3">
+				<div class="container">
+					<div class="f-grid">
+						<div class="f-main">
+							<div class="f-main-i" data-tab="contact-form-section-0">
+								<div class="f-w">
+									<h4>Some text</h4>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore reprehenderit corporis amet ipsum, iure incidunt saepe doloremque quibusdam quae officia harum perspiciatis eaque pariatur eveniet eos esse, aut, similique ab.</p>
+								</div>
+								{% include 'src/template/f-main-i.html' %}
+							</div>
+							<div class="f-main-i" data-tab="contact-form-section-1">
+								<div class="f-w2">
+									<div class="hots">
+										{{ global.hotsItem([{
+											title: "Has anyone had experience with BC.Game Casino?",
+											topic: "Complaints Discussion"
+										},{
+											title: "Where is the money going?",
+											topic: "Complaints Discussion"
+										},{
+											title: "Verification and confirmation",
+											topic: "Complaints Discussion"
+											},{
+											title: "Complaints Discussion",
+											topic: "General Gambling "
+										},{
+											title: "Where is the money going?",
+											topic: "General Gambling"
+										}])}}
+									</div>
+								</div>
+								{% include 'src/template/f-main-i.html' %}
+							</div>
+							<div class="f-main-i" data-tab="contact-form-section-2">
+								{% include 'src/template/f-main-i.html' %}
+							</div>
+						</div>
+						<div class="f-bar">
+							<div class="f-w">
+								<div class="cta-blue"><i class="i-x"></i>QUIZ</div>
+								<h4>How many different slot games do you play in a month?</h4>
+								<p><small>VOTE TO SEE THE RESULTS</small></p>
+								<div class="quiz-list">
+									<button class="button _btn-gray">1-2 slots</button>
+									<button class="button _btn-gray">3-5 slots</button>
+									<button class="button _btn-gray">6-10 slots</button>
+									<button class="button _btn-gray">More than 10 slots</button>
+								</div>
+							</div>
+							<div class="f-w">
+								<h4>Hot Threads</h4>
+								<div class="threads">
+									{% for i in range(1, 5) %}
+									<div class="thread">
+										<div class="thread-icons">
+											{% if i == 1 %}
+											<div class="thread-icon">
+												<img src="img/sico1-2.svg" alt="">
+											</div>
+											{% elif i == 3 %}
+											<div class="thread-icon">
+												<img src="img/sico6-2.svg" alt="">
+											</div>
+											{% endif %}
+											<div class="thread-icon">#{{i}}</div>
+										</div>
+										<h3 class="thread-t"><a href="#!">Discussion Everything that's related t..</a></h3>
+										<div class="thread-time">17 minutes ago</div>
+									</div>
+									{% endfor %}
+								</div>
+							</div>
+							<div class="f-w">
+								<h4>Who is Online</h4>
+								<div class="users">
+									<div class="user _online">
+										<div class="user-ava">
+											<img src="img/img1.jpg" alt="avatar">
+										</div>
+										<div class="user-nik">guiller56bj</div>
+										<div class="user-points">+ 214 points</div>
+									</div>
+									<div class="user _offline">
+										<div class="user-ava">
+											<img src="img/img1.jpg" alt="avatar">
+										</div>
+										<div class="user-nik">kalkanjieva53</div>
+										<div class="user-points">+ 114 points</div>
+									</div>
+									<div class="user _near">
+										<div class="user-ava">
+											<img src="img/img1.jpg" alt="avatar">
+										</div>
+										<div class="user-nik">Nadule </div>
+										<div class="user-points">+ 98 points</div>
+									</div>
+									<div class="user-more"><a href="#!" class="button _btn-gray">See more</a></div>
+								</div>
+							</div>
+							<div class="f-w">
+								<h4>Top Contributors</h4>
+								<div class="users-filter">
+									<a href="#!" class="users-filter-btn">Week</a>
+									<a href="#!" class="users-filter-btn">Month</a>
+									<a href="#!" class="users-filter-btn _active">All Time</a>
+								</div>
+								<div class="users">
+									<div class="user _state-near">
+										<div class="user-number">#1</div>
+										<div class="user-ava">
+											<img src="img/img1.jpg" alt="avatar">
+										</div>
+										<div class="user-nik">prachtweib82</div>
+										<div class="user-points">+ 214 points</div>
+									</div>
+									<div class="user _state-online">
+										<div class="user-number">#2</div>
+										<div class="user-ava">
+											<img src="img/img1.jpg" alt="avatar">
+										</div>
+										<div class="user-nik">User90111</div>
+										<div class="user-points">+ 114 points</div>
+									</div>
+									<div class="user _state-online">
+										<div class="user-number">#3</div>
+										<div class="user-ava">
+											<img src="img/img1.jpg" alt="avatar">
+										</div>
+										<div class="user-nik">Nadule </div>
+										<div class="user-points">+ 98 points</div>
+									</div>
+									<div class="user _state-offline">
+										<div class="user-number">#4</div>
+										<div class="user-ava">
+											<img src="img/img1.jpg" alt="avatar">
+										</div>
+										<div class="user-nik">Taty0509 </div>
+										<div class="user-points">+ 82 points</div>
+									</div>
+									<div class="user _state-offline">
+										<div class="user-number">#5</div>
+										<div class="user-ava">
+											<img src="img/img1.jpg" alt="avatar">
+										</div>
+										<div class="user-nik">susan15 </div>
+										<div class="user-points">+ 42 points</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% include 'src/template/popup-write-discussion.html' %}
+				</div>
+			</section>
+		</main>
+
+		{% include 'src/template/footer.html' %}
+	</div>
+	{% include 'src/template/includes.html' %}
+</body>
+</html>

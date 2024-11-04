@@ -1,0 +1,213 @@
+---
+title: User top review page
+---
+{% import 'src/template/macrosAndVariable.html' as global %}
+{% include 'src/template/head.html' %}
+
+<body>
+	<div class="wrapper offset-header">
+		{% include 'src/template/header.html' %}
+
+		<main class="main">
+			<section class="py-3 bg-blue-d text-white">
+				<div class="container _w1170">
+					<div class="breadcrumb mb-1 d-md-none">
+						<div class="breadcrumb-trail"> <a href="https://basethemedevel.wpengine.com/" title="Base Theme" rel="home" class="trail-begin">Home</a> <span class="sep">/</span> Top Crypto Casino Reviews</div>
+					</div>
+					<div class="grid-txt-w mb-0">
+						<div class="grid-txt-c">
+							<div class="grid-txt">
+								<h3 class="h5">top expert review</h3>
+								<h1 class="h1">Crypto Casino Reviews by Experts and Players</h1>
+								<div class="grid-txt-ico-mob-g">
+								<h2 class="h4">Browse online casino reviews by experts and players. Find best casinos according to experts and community members or share your experience.</h2>
+								<div class="grid-txt-ico _w-md-50p d-none d-md-block">
+									<img src="img/img17.png" alt="img">
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid-txt-ico _w50p d-md-none">
+							<img src="img/img17.png" alt="img">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="my-10 my-md-4">
+				<div class="container">
+					<div class="c-slider-top">
+						<div class="c-slider-top-txt">
+							<img class="c-slider-top-img" src="img/sico1.svg" alt="">
+							<h2 class="h3">Best crypto casinos according to our expert reviews</h2>
+							<p>We conducted an in-depth evaluation of these crypto casinos across all key aspects, and these are the ones we believe stand out as the best.</p>
+						</div>
+						<div class="c-slider-top-btns">
+							<button class="button _btn-white c-swiper-button-prev"><i class="i-arrow-l"></i> Prev</button>
+							<button class="button _btn-white c-swiper-button-next">Next<i class="i-arrow-r"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper c-slider">
+					<div class="swiper-wrapper">
+						{% for i in range(0, 6) %}
+						<div class="swiper-slide g-review">
+							<div class="g-review-top">
+								<div class="g-review-img">
+									<img src="img/logo1.png" alt="logo">
+								</div>
+								<div class="g-review-info">
+									<h3 class="h4"><a href="#">Lucky Block</a></h3>
+									<div class="g-review-rating"><b>4.9</b>CoinBets Rating</div>
+									<div class="g-review-index _bg-green">Safety Index: <span>Normal</span></div>
+								</div>
+							</div>
+							<div class="g-review-bottom-full">
+								<a href="#" class="button _btn-green">Visit Casino</a>
+								<a href="#" class="button">Read Reviews</a>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</section>
+			<section class="my-10 my-md-4">
+				<div class="container">
+					<div class="c-slider-top">
+						<div class="c-slider-top-txt">
+							<img class="c-slider-top-img" src="img/sico2.svg" alt="img">
+							<h2 class="h3">Best crypto casinos according to our user reviews</h2>
+							<p>With thousands of player reviews, these crypto casinos have been ranked as the best by you, the players.</p>
+						</div>
+						<div class="c-slider-top-btns">
+							<button class="button _btn-white c-swiper-button-prev"><i class="i-arrow-l"></i> Prev</button>
+							<button class="button _btn-white c-swiper-button-next">Next<i class="i-arrow-r"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper c-slider stars-blue">
+					<div class="swiper-wrapper">
+						{% for i in range(0, 6) %}
+						<div class="swiper-slide g-review">
+							<div class="g-review-top">
+								<div class="g-review-img">
+									<img src="img/logo5.png" alt="logo">
+								</div>
+								<div class="g-review-info">
+									<h3 class="h4"><a href="#">Lucky Block</a></h3>
+									<div class="g-review-stars _ai-b">
+										<div class="g-review-num"><b>4.9</b>/ 5</div>
+										<span>133 Reviews</span>
+									</div>
+									{{ global.starsMacro()}}
+								</div>
+							</div>
+							<div class="g-review-bottom-full">
+								<div class="g-review-index _bg-green">Safety Index: <span>Normal</span></div>
+								<a href="#" class="button">Read Reviews</a>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</section>
+			<section class="my-8 text-white txt-c">
+				<div class="container">
+					<div class="bg-green-radius py-10 px-3">
+						<div class="container _w590 bg-gr-images">
+							<h3 class="h6">2024 Buyer’s Choice Awards</h3>
+							<h2 class="h1">Browse all reviews</h2>
+							<h3 class="h4"><i class="i-sico40"></i> Write a review</h3>
+							<div class="hero-search _s-center">
+								<form>
+									<div class="hero-search-row">
+										<input type="text" placeholder="Search Crypto Casinos Now">
+										<input type="submit" value="">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="my-6">
+				<div class="container _w780">
+					<div class="reviews-filter-w">
+						<div class="reviews-filter-t">Verified User reviews</div>
+						<div class="reviews-filter-s select-v2">
+							<select>
+								<option>Newest</option>
+								<option>Newest2</option>
+								<option>Newest3</option>
+							</select>
+						</div>
+					</div>
+					<div class="reviews-list">
+						{% for i in range(0, 4) %}
+						<div class="review">
+							<div class="review-t">
+								<div class="review-t-l">
+									<div class="review-t-l-img">
+										<img src="img/ico8.png" alt="avatar">
+									</div>
+									<div class="review-t-l-txt">
+										<div class="h6-500">Dejel221</div>
+										<div class="g-review-tags">
+											<div class="g-review-tag">Expert Reviewer</div>
+										</div>
+										<div class="g-review-stars _ai-b mb-0">
+											<div class="g-review-num"><b>4.8</b>/ 5</div>&nbsp;
+											{{ global.starsMacro(4.8)}}
+										</div>
+										<div class="g-review-time">Reviewed<span>1 week ago</span></div>
+									</div>
+								</div>
+								<div class="review-t-r">
+									{% include 'src/template/r-slider.html' %}
+								</div>
+							</div>
+							<div class="review-m">
+								<p>At the beginning I really thought that this casino would become my favorite casino. <br> The first payouts were super fast, within a few hours or even minutes. When I started withdrawing more money, the payments were held back. Apparently this was my bank's fault. Which can't be 100% true. At the moment there are still 950€ outstanding which have been in progress for days. I have slowly lost my trust in the casino! I will file a complaint. The casino advertises payouts within 9 minutes 😂</p>
+							</div>
+							<div class="review-b">
+								<div class="review-list-w _r-pos">
+									<div class="review-list-t">Positive</div>
+									<ul class="review-list">
+										<li>The first 5-6 payouts quickly</li>
+										<li>Fast verification</li>
+									</ul>
+								</div>
+								<div class="review-list-w _r-neg">
+									<div class="review-list-t">Negative</div>
+									<ul class="review-list">
+										<li>Payments are withheld</li>
+										<li>You have to upload a lot of evidence</li>
+									</ul>
+								</div>
+								<div class="review-list-w _r-rait">
+									<div class="review-raiting-num">4.8</div>
+									<p>Helpful rating</p>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</section>
+			<section class="my-12 my-md-3 entry">
+				<div class="container _w950">
+					<hr>
+					{% include 'src/template/seo-metadata.html' %}
+				</div>
+			</section>
+			<section class="my-12 my-md-3">
+				<div class="container _w950">
+					{% include 'src/template/faq.html' %}
+				</div>
+			</section>
+		</main>
+
+		{% include 'src/template/footer.html' %}
+	</div>
+	{% include 'src/template/includes.html' %}
+</body>
+</html>

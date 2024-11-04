@@ -1,0 +1,207 @@
+{% macro sprite(svgName) %}
+<svg class="icon">
+	<use href="img/sprite.symbol.svg#{{svgName}}"></use>
+</svg>
+{% endmacro %}
+
+{# How to use #}
+{# {{ global.sprite("facebook")}} #}
+
+{% macro starsMacro(result) %}
+<div class="stars" style="--data-result: {{result | default('5')}}"><i></i><i></i><i></i><i></i><i></i><div class="stars-inner"><i></i><i></i><i></i><i></i><i></i></div></div>
+{% endmacro %}
+
+{# How to use #}
+{# {{ global.starsMacro(2.5)}} #}
+
+
+{% macro reviewItem(arr) %}
+{% for item in arr %}
+<div class="swiper-slide g-review">
+	<div class="g-review-top">
+		<div class="g-review-img">
+			<img src="{{item.img}}" alt="img">
+		</div>
+		<div class="g-review-info">
+			<h3 class="h4"><a href="#">{{item.t}}</a></h3>
+			<div class="g-review-stars">
+				<b>4.7</b>
+				{{ starsMacro(item.stars)}}
+				<span>133 Reviews</span>
+			</div>
+			<div class="g-review-index">Safety Index: <span>Normal</span></div>
+		</div>
+	</div>
+	<ul class="g-review-list">
+		<li>Players must be 21 or over</li>
+		<li>Small international casino</li>
+		<li>Average withdrawal limits (16000$/month)</li>
+		<li>All deposits need to be wagered 1x before withdrawal</li>
+	</ul>
+	<div class="g-review-bonus">
+		<div class="g-review-bonus-l">300% up to $3,000</div>
+		<div class="g-review-bonus-r">Bonus</div>
+	</div>
+	<div class="g-review-bottom">
+		<div class="g-review-rating"><b>4.9</b>CoinBets Rating</div>
+		<a href="#" class="button">Read Reviews</a>
+	</div>
+</div>
+{% endfor %}
+{% endmacro %}
+
+{# How to use #}
+{#
+{{ global.reviewItem([{
+	t: "Title text",
+	img: "img/ico1.svg"
+}])}}
+#}
+
+{% macro expertItem(arr, pTxt) %}
+{% for item in arr %}
+<div class="swiper-slide g-expert">
+	<div class="g-expert-img">
+		<img src="{{item.img}}" alt="img">
+	</div>
+	<ul class="g-expert-tags">
+		<li>Guides</li>
+	</ul>
+	<h3 class="h6-700"><a href="#">{{item.t}}</a></h3>
+	{% if pTxt is defined %}<p>Principles described in this article can be applied to almost any game of chance in which a player plays against the house.</p>{% endif %}
+	<div class="g-expert-meta">
+		<div class="g-expert-date">July 18, 2024</div>
+		<div class="g-expert-views">200 Views</div>
+		<div class="g-expert-read">2 mins read</div>
+	</div>
+</div>
+{% endfor %}
+{% endmacro %}
+
+{# How to use #}
+{#
+{{ global.expertItem([{
+	t: "Title text",
+	img: "img/ico1.svg"
+}])}}
+#}
+
+{% macro communityItem(arr) %}
+{% for item in arr %}
+<div class="swiper-slide g-community">
+	<div class="g-community-img"><img src="{{item.img}}" alt=""></div>
+	<h3 class="h6-700">{{item.t}}</h3>
+	<div class="g-community-txt">{{item.txt}}</div>
+	<div class="g-community-meta">
+		<div class="g-community-meta-i">Post<span>8280</span></div>
+		<div class="g-community-meta-i">Threads<span>in 929</span></div>
+	</div>
+</div>
+{% endfor %}
+{% endmacro %}
+
+{# How to use #}
+{#
+{{ global.communityItem([{
+	img: "img/ico1.svg",
+	t: "Title text",
+	txt: "Text"
+}])}}
+#}
+
+
+{% macro userItem(arr) %}
+{% for item in arr %}
+<div class="col-review-w">
+	<div class="col-review">
+		<div class="col-review-top">
+			<div class="col-review-img {{item.imgClass}}">
+				<img src="{{item.img}}" alt="logo">
+			</div>
+			<div class="col-review-info">
+				<h3 class="h6-500"><a href="#">Dejel221</a></h3>
+				<div class="col-review-tag">New Reviewer</div>
+				<div class="col-review-rating"><b>5.0</b>User Rating</div>
+				{{ starsMacro(5)}}
+				<div class="col-review-amount">133 Reviews</div>
+			</div>
+		</div>
+		<p>"{{item.txt}}"</p>
+	</div>
+</div>
+{% endfor %}
+{% endmacro %}
+
+{# How to use #}
+{#
+{{ global.userItem([{
+	img: "img/ico1.svg",
+	txt: "Text"
+}])}}
+#}
+
+
+{% macro topicItem(images) %}
+{% for src in images %}
+<div class="f-w">
+	<div class="f-topic">
+		<div class="f-topic-img">
+			<img src="{{ src }}" alt="">
+		</div>
+		<div class="f-topic-desc">
+			<h3 class="h4"><a href="#!">General Gambling</a></h3>
+			<p>Members engage in diverse discussions, connecting and sharing on various topics.</p>
+		</div>
+		<div class="f-topic-num">
+			<div class="f-topic-lg">8280</div>
+			<div class="f-topic-sm">Post</div>
+		</div>
+		<div class="f-topic-num">
+			<div class="f-topic-lg">12K</div>
+			<div class="f-topic-sm">Views</div>
+		</div>
+		<div class="f-topic-info">
+			<div class="f-topic-txt">
+				<p>Introduce your business</p>
+				<div class="f-topic-meta">
+					<span>by Carla</span>
+					<time>17 minutes ago</time>
+				</div>
+			</div>
+			<div class="f-topic-ava">
+				<img src="img/sico1-2.svg" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+{% endmacro %}
+
+{# How to use #}
+{#
+{{ global.topicItem(["img/img1.jpg", "img/img2.jpg"])}}
+#}
+
+{% macro hotsItem(arr) %}
+{% for item in arr %}
+<div class="hot">
+	<div class="hot-t"><a href="#!">🔥#{{ loop.index }} {{ item.title }}</a></div>
+	<div class="hot-meta">
+		<div class="hot-topic"><a href="#!">{{ item.topic }}</a></div>
+		<div class="hot-ava">
+			<img src="img/img1.jpg" alt="img">
+		</div>
+		<div class="hot-user">by Carla</div>
+		<time class="hot-time">17 minutes ago</time>
+	</div>
+</div>
+{% endfor %}
+{% endmacro %}
+
+{# How to use #}
+{#
+{{ global.hotsItem([{
+	title: "Where is the money going?",
+	topic: "General Gambling"
+}])}}
+#}

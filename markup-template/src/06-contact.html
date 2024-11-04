@@ -1,0 +1,179 @@
+---
+title: Contact page
+---
+{% import 'src/template/macrosAndVariable.html' as global %}
+{% include 'src/template/head.html' %}
+
+<body>
+	<div class="wrapper offset-header">
+		{% include 'src/template/header.html' %}
+
+		<main class="main">
+			<section class="py-3 mb-10 mb-md-4 py-md-3 bg-grad-l-b-top" data-tabs="contact-form-section-0">
+				<div class="container _w1170">
+					<div class="breadcrumb mb-5 d-md-none">
+						<div class="breadcrumb-trail"> <a href="https://basethemedevel.wpengine.com/" title="Base Theme" rel="home" class="trail-begin">Legal</a> <span class="sep">/</span> Terms of use</div>
+					</div>
+					<div class="contact-txt-w">
+						<div class="contact-txt-c">
+						<div class="contact-txt" data-tab="contact-form-section-0">
+							<h3 class="h5">Get in touch</h3>
+							<h1 class="h1">Contact CoinBets</h1>
+							<h2 class="h4">Got a question? Need more information? Or just want to share your experience with us? We're all ears! At Coinbets, your input is invaluable in helping us enhance your gambling journey. </h2>
+						</div>
+						<div class="contact-txt" data-tab="contact-form-section-1">
+							<h3 class="h5">Get in touch</h3>
+							<h2 class="h1">Report an issue or suggest an improvement</h2>
+							<h2 class="h4">Did you find something on our website that is incorrect, does not work well, or could be improved? Please let us know using the form below.</h2>
+						</div>
+						<div class="contact-txt" data-tab="contact-form-section-2">
+							<h3 class="h5">Get in touch</h3>
+							<h2 class="h1">Add a casino</h2>
+							<h2 class="h4">Do you know a casino which is not listed on our website? Let us know, and we will add it to our database and review it.</h2>
+						</div>
+						<div class="contact-txt" data-tab="contact-form-section-3">
+							<h3 class="h5">Get in touch</h3>
+							<h2 class="h1">Report an issue or suggest an improvement</h2>
+							<h2 class="h4">Did you find something on our website that is incorrect, does not work well, or could be improved? Please let us know using the form below.</h2>
+						</div>
+						</div>
+						<div class="contact-txt-ico">
+							<img src="img/img16.png" alt="img">
+						</div>
+					</div>
+					<div class="contact-grid">
+						<div class="contact-grid-forms">
+							<div class="contact-grid-form" data-tab="contact-form-section-0">
+								<form>
+									<label for="name">
+										<span>Name</span>
+									</label>
+									<div class="d-grid">
+										<input type="text" id="name" placeholder="First name">
+										<input type="text" placeholder="Last name">
+									</div>
+									<label>
+										<span>Email address</span>
+										<input type="email">
+									</label>
+									<label>
+										<span>Message</span>
+										<textarea placeholder="Insert your feedback here..."></textarea>
+									</label>
+									<label>
+										<span>Attach photos or screenshot</span>
+										<input type="file">
+									</label>
+									<input type="submit" value="Submit">
+								</form>
+							</div>
+							<div class="contact-grid-form" data-tab="contact-form-section-1">
+								<form>
+									<label>
+										<input type="checkbox">
+										Feedback related to a specific casino
+									</label>
+									<label>
+										<span>Message</span>
+										<textarea placeholder="Insert your feedback here..."></textarea>
+									</label>
+									<label>
+										<span>Attach photos or screenshot</span>
+										<input type="file">
+									</label>
+									<input type="submit" value="Submit">
+								</form>
+							</div>
+							<div class="contact-grid-form" data-tab="contact-form-section-2">
+								<form>
+									<label>
+										<span>Casino's name</span>
+										<input type="text">
+									</label>
+									<label>
+										<span>Casino's website</span>
+										<input type="text">
+									</label>
+									<label>
+										<span>Owner / Company info (optional)</span>
+										<input type="text">
+									</label>
+									<label>
+										<span>Licenses (optional)</span>
+										<input type="text">
+									</label>
+									<label>
+										<span>Note</span>
+										<textarea placeholder="Add your message here"></textarea>
+									</label>
+									<label>
+										<input type="checkbox">
+										CoinBets terms and conditions
+									</label>
+									<input type="submit" value="Submit">
+								</form>
+							</div>
+							<div class="contact-grid-form" data-tab="contact-form-section-3">
+								<form>
+									<label>
+										<input type="checkbox">
+										Feedback related to a specific casino
+									</label>
+									<label>
+										<span>Message</span>
+										<textarea placeholder="Insert your feedback here..."></textarea>
+									</label>
+									<label>
+										<span>Attach photos or screenshot</span>
+										<input type="file">
+									</label>
+									<input type="submit" value="Submit">
+								</form>
+							</div>
+						</div>
+						<div class="contact-grid-tabs-w">
+							<div class="contact-grid-btns">
+								<a href="#" class="button _btn-black" target="_blank"><i class="i-sico37"></i>X Support</a>
+								<a href="#" class="button _btn-black"><img src="img/sico38.svg" alt="">Support Center</a>
+							</div>
+							<div class="contact-grid-tabs">
+								<div class="contact-grid-tab" data-tab-btn="contact-form-section-1">
+									<div class="contact-grid-tab-ico">
+										<img src="img/sico4-2.svg" alt="img">
+										<!-- or you can use icon -->
+										<!-- <i class="i-sico4"></i> -->
+									</div>
+									<div class="h6-700">Suggest an Improvement</div>
+									<p>Did you find something on our website that you think could be improved? Send us your suggestions.</p>
+									<a href="#" class="button _btn-gray">Suggest</a>
+								</div>
+								<div class="contact-grid-tab" data-tab-btn="contact-form-section-2">
+									<div class="contact-grid-tab-ico">
+										<img src="img/sico1-2.svg" alt="img">
+										<!-- or you can use icon -->
+										<!-- <i class="i-sico1"></i> -->
+									</div>
+									<div class="h6-700">Add a casino </div>
+									<p>Do you know a casino which is not listed on our website? Let us know, and we will add it to our database and review it.</p>
+									<a href="#" class="button _btn-gray">Add Casino</a>
+								</div>
+								<div class="contact-grid-tab" data-tab-btn="contact-form-section-3">
+									<div class="contact-grid-tab-ico">
+										<img src="img/sico39.svg" alt="">
+									</div>
+									<div class="h6-700">Report an issue </div>
+									<p>Did you find something that does not work well on our website? Let us know, and we will investigate the issue and fix it.</p>
+									<a href="#" class="button _btn-gray">Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		{% include 'src/template/footer.html' %}
+	</div>
+	{% include 'src/template/includes.html' %}
+</body>
+</html>
